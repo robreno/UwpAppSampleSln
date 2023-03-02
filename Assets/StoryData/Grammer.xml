@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Grammer>
+  <Metadata>
+    <PitchSymbols>
+      <PitchRise pitchRise="⎾" />
+      <PitchDrop pitchDrop="⏋" />
+      <PitchFall pitchFall="➘" />
+    </PitchSymbols>
+    <Content>
+      <ProperNoun type="Pro{n}" roleAbbr="PN" baseType="noun">
+        <Example example="{e.g., Yamada 'Yamada' , Shanhai 'Shanghai'}">
+          <Text>For example,  Yamada 'Yamada', Shanhai 'Shanghai'.</Text>
+          <Description>Nouns refer to people, places, and things.</Description>
+          <Usages>
+            <Usage en="I will go from Shanghai to New York.">
+              <Run type="ruby" text="上海" rt="しゃんはい" />
+              <Run type="regular" text="とニューヨークに" />
+              <Run type="ruby" text="行" rt="い" />
+              <Run type="regular" text="きます。" />
+            </Usage>
+            <Usage en="I'm Yamda. This person is Mr. Tanaka.">
+              <Run type="ruby" text="私" rt="わたし" />
+              <Run type="regular" text="は" />
+              <Run type="ruby" text="山田" rt="やまだ" />
+              <Run type="regular" text="です。こちらは" />
+              <Run type="ruby" text="田中" rt="たなか" />
+              <Run type="regular" text="さんです。" />
+            </Usage>
+          </Usages>
+        </Example>
+      </ProperNoun>
+      <CommonNoun type="Com{n}" roleAbbr="CN" baseType="noun">
+        <Example example="{e.g., neko 'cat' , gakusei 'student'}">
+          <Text>For example, neko 'cat', gakusei 'student'.</Text>
+          <Description>
+            Comon nouns refer to a class of items and can be preceded by demonstrative adjectives such as kono 'this' and sono 'that'. 
+            They can be accompanied by quantity/amount phrases.
+          </Description>
+          <Usages>
+            <Usage en="Two students came.">
+              <Run type="ruby" text="学生" rt="がくせい" />
+              <Run type="ruby" text="二人" rt="ふたり" />
+              <Run type="ruby" text="来" rt="き" />
+              <Run type="regular" text="ました。" />
+            </Usage>
+            <Usage en="Please give me a little bit of sugar.">
+              <Run type="ruby" text="砂糖" rt="さとう" />
+              <Run type="regular" text="を" />
+              <Run type="ruby" text="少" rt="すこ" />
+              <Run type="regular" text="し" />
+              <Run type="ruby" text="下" rt="くだ" />
+              <Run type="regular" text="さい。" />
+            </Usage>
+          </Usages>
+        </Example>
+      </CommonNoun>
+      <VerbNoun type="Vrb{n}" roleAbbr="Vn" baseType="verb">
+        <Example example="{e.g., neko 'cat' , gakusei 'student'}">
+          <Text>For example, hajimeru 'the beginning' / hajime 'the beginning', nomi-sugiru 'to overdrink' / nomi-sugi 'overdrinking'.</Text>
+          <Description>Some verbs in the combining form can function as nouns.</Description>
+          <Usages>
+            <Usage en="I go by bus and come back by taxi.">
+              <Run type="ruby" text="行" rt="いき" />
+              <Run type="regular" text="はバスで" />
+              <Run type="ruby" text="帰" rt="かえ" />
+              <Run type="regular" text="りはタクシーです。" />
+            </Usage>
+            <Usage en="He prefers playing to studying.">
+              <Run type="ruby" text="彼" rt="かれ" />
+              <Run type="regular" text="は" />
+              <Run type="ruby" text="勉強" rt="べんきょう" />
+              <Run type="regular" text="よりも" />
+              <Run type="ruby" text="遊" rt="あそ" />
+              <Run type="regular" text="びが" />
+              <Run type="ruby" text="好" rt="すき" />
+              <Run type="regular" text="です。" />
+            </Usage>
+          </Usages>
+        </Example>
+      </VerbNoun>
+      <AdjectiveNoun type="Adj{n}" roleAbbr="An" baseType="adjective">
+        <Example example="{e.g., akai 'to be red' / aka 'red', fukai ''to be deep / fukasa 'deep'}">
+          <Text>For example, akai 'to be red' / aka 'red', fukai 'to be deep' / fukasa 'deep'.</Text>
+          <Description>Nouns created from adjectives or roots of adjectives.</Description>
+          <Usages>
+            <Usage en="Red hat. ">
+              <Run type="ruby" text="赤" rt="あか" />
+              <Run type="ruby" text="帽" rt="ぼ。" />
+            </Usage>
+            <Usage en="Red car.">
+              <Run type="ruby" text="赤" rt="あか" />
+              <Run type="ruby" text="車" rt="くるま。" />
+            </Usage>
+          </Usages>
+        </Example>
+      </AdjectiveNoun>
+      <CompounNoun type="Cmp{n}" roleAbbr="Cp" baseType="noun">
+        <Example example="{e.g., jikoku hyō 'a timetable', wasuremono 'forgotten item', chikamichi 'shortcut'}">
+          <Text>For example, jikoku hyō 'a timetable', wasuremono 'forgotten item', chikamichi 'shortcut'.</Text>
+          <Description>Two nouns can be joined to form a compound noun.</Description>
+          <Usages>
+            <Usage en="A timetable. ">
+              <Run type="ruby" text="時刻" rt="じこく" />
+              <Run type="ruby" text="表" rt="ひょう。" />
+            </Usage>
+            <Usage en="Forgotten item.">
+              <Run type="ruby" text="忘" rt="わす" />
+              <Run type="regular" text="れ" />
+              <Run type="ruby" text="物" rt="もの。" />
+            </Usage>
+          </Usages>
+        </Example>
+      </CompounNoun>
+      <PersonalPronoun type="Per{n}" roleAbbr="Pp" baseType="noun">
+        <Example example="{e.g., jikoku hyō 'a timetable', wasuremono 'forgotten item', chikamichi 'shortcut'}">
+          <Text>For example, watashi '1st person gender neutral', anata '2nd person gender neutral'.</Text>
+          <Description>Personal pronouns.</Description>
+          <Usages>
+            <Usage en="I">
+              <Run type="ruby" text="私" rt="わたし、わたくし" />
+            </Usage>
+            <Usage en="You">
+              <Run type="regular" text="あなた、きみ" />
+            </Usage>
+            <Usage en="He/him">
+              <Run type="ruby" text="彼" rt="かれ" />
+            </Usage>
+            <Usage en="She/her">
+              <Run type="ruby" text="彼女" rt="かのじょ" />
+            </Usage>
+            <Usage en="They/them">
+              <Run type="ruby" text="彼" rt="かれ" />
+              <Run type="regular" text="ら" />
+            </Usage>
+          </Usages>
+        </Example>
+      </PersonalPronoun>
+      <VerbTransitive type="Vrb{t}" roleAbbr="Vt" baseType="verb"></VerbTransitive>
+      <VerbIntransitive type="Vrb{i}" roleAbbr="Vi" baseType="verb"></VerbIntransitive>
+      <VerbAuxiliary type="Vrb{aux}" roleAbbr="Va" baseType="verb"></VerbAuxiliary>
+      <DemonstrativeNoun type="Dem{n}" roleAbbr="Dn" baseType="noun">
+        <Example example="{e.g., kore 'this', sore 'that', are 'that over there', dore 'which one'}">
+          <Text>For example, kore 'this', sore 'that', are 'that over there', dore 'which one'.</Text>
+          <Description>Demonstratives are used to refer to things in terms of their physical location.</Description>
+          <Usages>
+            <Usage en="This, that, that over there, which one">
+              <Run type="regular" text="これ、それ、あれ、どれ" />
+            </Usage>
+            <Usage en="Here, there, over there, where">
+              <Run type="regular" text="ここ、そこ、あそこ、どこ" />
+            </Usage>
+            <Usage en="this type, that type, that type overthere, which type">
+              <Run type="regular" text="こんな、そんな、あんな、どんな" />
+            </Usage>
+          </Usages>
+        </Example>
+      </DemonstrativeNoun>
+      <Adverb type="Adv" roleAbbr="Av" baseType="verb">
+      </Adverb>
+      <AdjectiveIType type="Adj{i}" roleAbbr="Ai" baseType="adjective">
+        <Example example="{e.g., takai 'high, expensive' , yasui 'inexpensive'}">
+          <Text>For example, takai 'high, expensive', yasui 'inexpensive'.</Text>
+          <Description>Nouns refer to people, places, and things.</Description>
+        </Example>
+      </AdjectiveIType>
+      <AdjectiveNType type="Adj{na}" roleAbbr="An" baseType="adjective">
+        <Example example="{e.g., genkida 'health', shizukada 'quite'}">
+          <Text>For example, genkida 'health', shizukada 'quite'.</Text>
+          <Description></Description>
+        </Example>
+      </AdjectiveNType>
+      <Suffixes>
+        <Suffix type="Suf{be}" roleAbbr="Sf" baseType="suffix" example="{e.g., -sa '-ness', -ya '-store'}">
+        </Suffix>
+      </Suffixes>
+      <Particles>
+        <Particle en="wa" 
+                  id="Prt{wa}.{t.m.}"
+                  type="Prt{wa}" 
+                  role="t.m." 
+                  descrption="A particle which marks a topic or a contrastive element."
+                  example="私額学です。| わたしはがくせいです。| 1. I am a student. 2. talking about ~; as for ~; the" >
+          <Run type="regular" text="は" />
+        </Particle>
+        <Particle en="ga" 
+                  id="Prt{ga}.{s.m.}"
+                  type="Prt{ga}"
+                  roleAbbr="s.m."
+                  role="Subject marker, nominative case marker, but, and..." 
+                  descrption="Marks the subject of a sentence when the information expressed by the subject is first introduced in a discourse."
+                  example="雨が降っています。| あめがふっています。| Ame ga futte iru / imasu.">
+          <Run type="regular" text="が" />
+        </Particle>
+        <Particle en="o"
+                  id="{o}"
+                  type="Prt{o}"
+                  roleAbbr="d.o.m."
+                  roll="Marks the direct object of the verb."
+                  descrption="A particle that marks a direct object."
+                  example="私は日本語を勉強している/います | わたしわにほんごをべんきょうしています。| watashi wa nihongo o benkyoo shiteimasu." >
+          <Run type="regular" text="を" />
+        </Particle>
+        <Particle en="to"
+                  id="{to}.{conj}"
+                  type="Prt{to}"
+                  roleAbbr="conj"
+                  roll="Conjunction as in A and B."
+                  descrption="Joins/lists things exhaustively."
+                  example="">
+          <Run type="regular" text="と" />
+        </Particle>
+        <Particle en="e" 
+                  id="{e}.{i.d.m.}"
+                  type="Prt{e}"
+                  roleAbbr="i.d.m."
+                  roll="Indicates directional toword which some action or movement proceeds."
+                  descrption="?"
+                  example="?">
+          <Run type="regular" text="へ" />
+        </Particle>
+        <Particle en="de" 
+                  id="{de}.{i.l.a.}"
+                  type="Prt{de}"
+                  roleAbbr="i.l.a."
+                  roll="at; in; on"
+                  descrption="A particle  (apparently derived from the te-form of desu) that indicates a weak causal relationship."
+                  example="あしたはきまつしけんでたいへんです。| あしたはきまつしけんでたいへんです。| I'm having an awful time because of tommorrow's final exame." >
+          <Run type="regular" text="で" />
+        </Particle>
+        <Particle en="ni"
+                  id="{ni}.{p.o.t.}"
+                  type="Prt{ni}"
+                  rollAbbr="p.o.t."
+                  roll="at; in; on"
+                  description="A particle that indicates a point in time s.t. take place."
+                  example="私は四月一日に生まれました。">
+          <Run type="regular" text="に" />
+        </Particle>
+        <Particle en="ni"
+                 id="{ni}.{i.o.m.}"
+                 type="Prt{ni}"
+                 rollAbbr="i.o.m."
+                 roll="to; for"
+                 description="A indirect object marker."
+                 example="私は母に手紙をよく書く/書きます。">
+          <Run type="regular" text="に" />
+        </Particle>
+        <Particle en="ni"
+                 id="{ni}.{a.s.c.}"
+                 type="Prt{ni}"
+                 rollAbbr="a.s.c."
+                 roll="by; from"
+                 description="A indicator of agent/source passive/causative or receiving constructions."
+                 example="明子は博にご飯を作らせた/つくらせました。">
+          <Run type="regular" text="に" />
+        </Particle>
+        <Particle en="ni" 
+                  id="{ni}.{n.p.m.}"
+                  type="Prt{ni}" 
+                  rollAbbr="n.p.m."
+                  roll="at; in; on"
+                  description="A particle that indicates the location where s.o. or s.t. exists." 
+                  example="ヒルさんは今ジョンソンさんのアパートにいる/います。">
+          <Run type="regular" text="に" />
+        </Particle>
+        <Particle en="no" 
+                  id="Prt{no}.{m.f.n.}"
+                  type="Prt{no}" 
+                  rollAbbr="m.f.n"
+                  role="'s; of; in; at; for; by; from"
+                  description="With a preceding noun phrase, forms a phrase to modify a following noun phrase."
+                  example="これは先生の本です。| これはせんせいのほんです。| This is my teacher's book.">
+            <Run type="regular" text="の" />
+          </Particle>
+        <Particle en="no"
+                  id="Prt{no}.{nom.}"
+                  type="Prt{no}"
+                  rollAbbr="nom."
+                  role="that ~; to do s.t.; doing s.t."
+                  relatedExp="koto; no"
+                  description="Nominaizer which is used when the nominalized sentence expresses a directly perceptible even."
+                  example="日本語を教えるのは難しいです。| にほんごをおしぇいるのはむずかしいです。| Teaching Japanese is difficult.">
+          <Run type="regular" text="の" />
+        </Particle>
+      </Particles>
+    </Content>
+  </Metadata>
+</Grammer>

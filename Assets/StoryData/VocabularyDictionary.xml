@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Vocabulariees count="1">
+  <Vocabulary storyId="1" lang="en-ja" enStoryName="Urashima Taroo" jaStoryName="浦島太郎">
+    <Entry id="1" lang="en-ja">
+      <Term lang="en" text="Urashima Taro" type="Pro{n}">
+        <Meaning>浦島太郎；主要人物 の 物語 (ものがたり)・民間説話（みんかんせつわ)</Meaning>
+      </Term>
+      <Term lang="ja" text="浦島太郎" rubyText="浦島太郎 (うらしまたろう)" type="Pro{n}">
+        <Meaning>Urashima Taroo; name of protagonist</Meaning>
+      </Term>
+    </Entry>
+    <Entry id="2" lang="en-ja">
+      <Term lang="en" text="Once upon a time" type="Phr{n}">
+        <Meaning>昔々</Meaning>
+      </Term>
+      <Term lang="ja" text="昔々" rubyText="昔々(むかしむかし)" type="Com{n}" >
+        <Meaning>Once upon a time</Meaning>
+      </Term>
+    </Entry>
+  </Vocabulary>
+</Vocabulariees>

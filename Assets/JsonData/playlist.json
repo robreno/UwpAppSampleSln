@@ -1,0 +1,42 @@
+﻿{
+  "mediaList": {
+    "title": "Urantia Book Audio",
+    "items": [
+      {
+        "mediaType": "music",
+        "title": "Perspective",
+        "mediaUri": "ms-appx:///Assets/Audio/Urantia/ub.000.0.mp3",
+        "albumArtUri": "ms-appx:///Assets/Themes/Caravan_Conductor.png",
+        "albumArtAttribution": "The Urantia Book | Urantia Foundation"
+      },
+      {
+        "mediaType": "music",
+        "title": "Foreword",
+        "mediaUri": "ms-appx:///Assets/Audio/Urantia/ub.000.mp3",
+        "albumArtUri": "ms-appx:///Assets/Themes/Jesus_Merchant.png",
+        "albumArtAttribution": "The Urantia Book | Urantia Foundation"
+      },
+      {
+        "mediaType": "music",
+        "title": "Introduction - Part I",
+        "mediaUri": "ms-appx:///Assets/Audio/Urantia/ub.001.0.mp3",
+        "albumArtUri": "ms-appx:///Assets/Themes/Jesus_Heals_Paralytic.png",
+        "albumArtAttribution": "The Urantia Book | Urantia Foundation"
+      },
+      {
+        "mediaType": "music",
+        "title": "Paper 1 - The Universal Father",
+        "mediaUri": "ms-appx:///Assets/Audio/Urantia/ub.001.mp3",
+        "albumArtUri": "ms-appx:///Assets/Themes/Healing_of_the_Blind_Bartimaeus.png",
+        "albumArtAttribution": "The Urantia Book | Urantia Foundation"
+      },
+      {
+        "mediaType": "music",
+        "title": "Paper 2 - The Nature of God",
+        "mediaUri": "ms-appx:///Assets/Audio/Urantia/ub.002.mp3",
+        "albumArtUri": "ms-appx:///Assets/Themes/One_Day_Alone_With_God.png",
+        "albumArtAttribution": "The Urantia Book | Urantia Foundation"
+      }
+    ]
+  }
+}

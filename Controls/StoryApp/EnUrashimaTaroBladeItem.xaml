@@ -1,0 +1,166 @@
+﻿<UserControl
+    x:Class="UwpSample.Controls.EnUrashimaTaroBladeItem"
+    x:Name="EnUrashimaTaroUC"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:local="using:UwpSample.Controls"
+    xmlns:ap="using:UwpSample.AttachedProperties" 
+    xmlns:vm="using:UwpSample.ViewModels" 
+    mc:Ignorable="d"
+    d:DesignHeight="1220"
+    d:DesignWidth="950"
+    d:DataContext="{d:DesignInstance Type=vm:ViewModelBase}"
+    HorizontalAlignment="Stretch"
+    VerticalAlignment="Stretch"
+    RequestedTheme="Dark"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <UserControl.Resources>
+
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Styles/Custom/StoryStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+        </ResourceDictionary>
+
+    </UserControl.Resources>
+
+    <controls:BladeItem x:Name="BladeItem"
+                        Margin="10,10,10,10"
+                        Style="{StaticResource BladeItemStyle}"
+                        Header="Urashima Taro"
+                        ap:Audio.SourceUri="ms-appx:///Assets/StoryData/Audio/EnUrashima.mp3"
+                        TitleBarVisibility="Visible">
+        <ScrollViewer x:Name="ScrollViewer"
+                        VerticalScrollBarVisibility="Visible"
+                        IsScrollInertiaEnabled="True">
+            <StackPanel x:Name="ContentStackPanel"
+                        Style="{StaticResource StackPanelStyle}">
+                <RichTextBlock x:Name="RichTextBlock00" Language="en" 
+                               Style="{StaticResource EnTitleText}"
+                               ToolTipService.Placement="Top" 
+                               ToolTipService.ToolTip="Title"
+                               ap:Audio.TimeSpan="0:0:0.0_0:0:2.0"
+                               Tag="浦島太郎">
+                    <Paragraph x:Name="Paragraph00">
+                        <Run x:Name="Run00" Text="Urashima Taro" />
+                    </Paragraph>
+                </RichTextBlock>
+                <RichTextBlock x:Name="RichTextBlock01" Language="en" 
+                               Style="{StaticResource EnRegularText}"
+                               ToolTipService.Placement="Top" 
+                               ToolTipService.ToolTip="Paragraph 1"
+                               ap:Audio.TimeSpan="0:0:3.0.0_0:0:32.0"
+                               Tag="昔々、ある海辺の村に、浦島太郎という漁師がすんでいました。浦島太郎は心のやさしい若者で、毎日海へ出かけて魚をつって年老いたお父さんとお母さんを養っていました。">
+                    <Paragraph x:Name="Paragrapha01">
+                        <Run x:Name="Run01" Text="Once upon a time in a seaside village, there lived a fisherman named Urashima Taro. Urashima Taro was a young man with a kind heart; he went out to sea every day to go fishing to support his elderly father and mother." />
+                    </Paragraph>
+                </RichTextBlock>
+                <RichTextBlock x:Name="RichTextBlock02" Language="en" 
+                               Style="{StaticResource EnRegularText}"
+                               ToolTipService.Placement="Top" 
+                               ToolTipService.ToolTip="Paragraph002"
+                               ap:Audio.TimeSpan="0:0:33.0_0:1:42.0"
+                               Tag="ある日、浦島太郎は海から帰る途中、浜で子供たちが集まって騒いでいるのを見ました。のぞいてみると、小さい亀の子を一匹つかまえて、皆で棒でつっついていじめていました。その亀の子をかわいそうだと思った浦島太郎は、「生き物をいじめてはいけないぞ。」と子供たちに言って、亀の子を助けてやりました。太郎が亀の子を手にのせて海の水の中に戻してやると、亀の子は喜んで甲羅から首や手足を出して、すいすいと泳ぎ始めました。そして、海の底の方へ戻って行きました。">
+                    <Paragraph x:Name="Paragraph02">
+                        <Run x:Name="Run02" Text="One day, on his way back from the sea, Urashima Taro saw some children gathered on the beach, making a lot of noise. He saw that they had caught a small baby turtle, and that they were all tormenting it by poking it with a stick. He felt sorry for the poor baby turtle. He said to the children, &quot;You must not torment living creatures!&quot; and saved the baby turtle. He took it in his hand and returned it to the water. The turtle was happy, and it popped its head and legs out of its shell and started to swim with no trouble at all, returning to the bottom of the sea." />
+                    </Paragraph>
+                </RichTextBlock>
+                <RichTextBlock x:Name="RichTextBlock03" Language="En" 
+                               Style="{StaticResource EnRegularText}"
+                               ToolTipService.Placement="Top" 
+                               ToolTipService.ToolTip="Paragraph03"
+                               ap:Audio.TimeSpan="0:1:43.0_0:2:28.0"
+                               Tag="それから二、三年たったある日のことです。浦島太郎はまた舟にのって海で魚をつっていました。すると、うしろのほうで、「浦島さん、浦島さん！」と呼ぶ声がしました。">
+                    <Paragraph x:Name="Paragraph03">
+                        <Run x:Name="Run03" Text="One day, two or three years later, Urashima Taro was once again out at the sea fishing when he heard a voice call out from behind him, &quot;Mr. Urashima! Mr. Urashima!&quot; When he looked behind him, a big turtle was approaching the boat." />
+                    </Paragraph>
+                </RichTextBlock>
+                <RichTextBlock x:Name="RichTextBlock04" Language="en" 
+                               Style="{StaticResource EnRegularText}"
+                               ToolTipService.Placement="Top" 
+                               ToolTipService.ToolTip="Paragraph04"
+                               ap:Audio.TimeSpan="0_0:2:29.0_0:3:40.0"
+                               Tag="ふりかえって、一匹の大きい亀が舟のそばにきていました。「わたくしは、前に助けていただいた亀でございます。お礼に海の底にある竜宮城にご案内いたしましょう。」と、亀が言いました。亀は背中に浦島太郎をのせて泳ぎ出しました。青い海中をしばらく潜っていくと、急にまわりが明るくなりました。あたり一面は珊瑚礁になりきれいな魚がたくさん泳いでいました。そして、またしばらく行くと、向こうに立派な門が見えました。魚たちは浦島太郎を竜宮城の中に案内しました。">
+                    <Paragraph x:Name="Paragraph04">
+                        <Run x:Name="Run04" Text="When he looked behind him, a big turtle was approaching the boat. &amp;Sir, I am the turtle that you saved. As a sign of my gratitude, I will guide you to the Dragon Palace at the bottom of the sea,&amp; the turtle said. The turtle put Urashima Taro onto its back and started swimming. When it dived under the blue sea a short time later, their surroundings were suddenly illuminated. They were surrounded by a coral reef, and schools of beautiful fish were swimming by. After they had been going for a while, an elegant gateway came into view in front of them. A fish led Urashima Taro into the Dragon Palace." />
+                    </Paragraph>
+                </RichTextBlock>
+                <RichTextBlock x:Name="RichTextBlock05" Language="en" 
+                               Style="{StaticResource EnRegularText}"
+                               ToolTipService.Placement="Top" 
+                               ToolTipService.ToolTip="Paragraph05"
+                               ap:Audio.TimeSpan="0:3:41.0_0:4:10.0"
+                               Tag="竜宮城の中には美しいおとひめさまがいて、「ようこそ竜宮城へいらっしゃいました。先日は亀を助けてくださってありがとうございました。どうぞゆっくり遊んでいってください。」と、やさしい声で言いました。">
+                    <Paragraph x:Name="Paragraph05">
+                        <Run x:Name="Run05" Text="Inside the Dragon Palace, there was a beautiful princess. &amp;Welcome to the Dragon Palace. Thank you for saving the turtle the other day. Please, relax and enjoy yourself,&amp; she said with a kind voice." />
+                    </Paragraph>
+                </RichTextBlock>
+                <RichTextBlock x:Name="RichTextBlock06" Language="en" 
+                               Style="{StaticResource EnRegularText}"
+                               ToolTipService.Placement="Top" 
+                               ToolTipService.ToolTip="Paragraph06"
+                               ap:Audio.TimeSpan="0:4:11.0_0:4:36.0"
+                               Tag="それから、浦島太郎は竜宮城できれいな魚たちの踊りをみたり、お酒を飲んだり、すばらしいご馳走を食べたり、乙姫様と楽しくお話ししたりして、夢のような毎日を過ごしました。">
+                    <Paragraph x:Name="Paragraph06">
+                        <Run x:Name="Run06" Text="After that, Urashima Taro watched the beautiful fish dance, drank sake, enjoyed wondrous feasts, merrily chatted with the princess, and lived every day like it was dream in the Palace." />
+                    </Paragraph>
+                </RichTextBlock>
+                <RichTextBlock x:Name="RichTextBlock07" Language="en" 
+                               Style="{StaticResource EnRegularText}"
+                               ToolTipService.Placement="Top" 
+                               ToolTipService.ToolTip="Paragraph07"
+                               ap:Audio.TimeSpan="0:4:37.0_0:5:38.0"
+                               Tag="ところが、しばらくすると、浦島太郎は村にいるお父さんとお母さんのことが心配になりました。そして、早くうちに帰りたいと思いました。そのことを乙姫様に言うと、乙姫様はきれいな箱を持って来てこう言いました。「さびしくなりますが、おうちにお帰りになりたいのは当然です。これは玉手箱です。これを持って気をつけてお帰りになってください。しかし、決してこの箱を開けないでくださいね 。」">
+                    <Paragraph x:Name="Paragraph07">
+                        <Run x:Name="Run07" Text="However, after a time, Urashima Taro became worried about his mother and father back in the village and thought that he would like to return home soon. When he told this to the princess, she gave him a beautiful box to take with him, and said, &amp;I will miss you, but it is natural for you to want to return home. This is a tamatabako, a treasure box. Please take it with you and be careful returning home. But please, never open this box.&amp;" />
+                    </Paragraph>
+                </RichTextBlock>
+                <RichTextBlock x:Name="RichTextBlock08" Language="en" 
+                               Style="{StaticResource EnRegularText}"
+                               ToolTipService.Placement="Top" 
+                               ToolTipService.ToolTip="Paragraph08"
+                               ap:Audio.TimeSpan="0:5:39_0:5:50.0"
+                               Tag="浦島太郎は玉手箱を持って、亀の背中にのって、村へと向かいました。">
+                    <Paragraph x:Name="Paragraph08">
+                        <Run x:Name="Run08" Text="Urashima Taro took the treasure box, got onto the turtle's back and set off towards his village." />
+                    </Paragraph>
+                </RichTextBlock>
+                <RichTextBlock x:Name="RichTextBlock09" Language="en" 
+                               TextAlignment="Left" TextIndent="20"
+                               Style="{StaticResource EnRegularText}"
+                               ToolTipService.Placement="Top" 
+                               ToolTipService.ToolTip="Paragraph09"
+                               ap:Audio.TimeSpan="0:5:51.0_0:6:30.0"
+                               Tag="ところが、海辺に着くと、あたりの様子はすっかり変わっていました。村の方に歩いていくと人がいましたが、どの人も知らない人でした。村には自分の家はありませんでした。お父さんもお母さんもいくら呼んでも見つかりません。浦島太郎はすっかり困ってしまいました。">
+                    <Paragraph x:Name="Paragraph09">
+                        <Run x:Name="Run09" Text="However, when he arrived at the shore, everything around him had completely changed. There were people there as he walked towards the village but he knew none of them. His own house in the village was gone. No matter how many times he called out to his mother and father, they couldn't be found. Urashima Taro was very shaken up." />
+                    </Paragraph>
+                </RichTextBlock>
+                <RichTextBlock x:Name="RichTextBlock10" Language="en" 
+                               Style="{StaticResource EnRegularText}"
+                               ToolTipService.ToolTip="Paragraph10"
+                               ap:Audio.TimeSpan="0:6:31.0_0:7:03.0"
+                               Tag="その時、ふと玉手箱が目に入りました。そして、浦島太郎はそれをそっと開けてみました。すると、中から白い煙が出てきました。太郎がだまってその煙を見ていると、若者だった浦島太郎はたちまち白い髭と髪の老人になってしまいました。">
+                    <Paragraph x:Name="Paragraph10">
+                        <Run x:Name="Run10" Text="At that moment, he suddenly caught sight of the tamatabako, and he gently tried to open it. When he did, white smoke came out from inside it. As he silently watched the smoke, in the blink of an eye the young Urashima Taro turned into an old man with white hair and white beard." />
+                    </Paragraph>
+                </RichTextBlock>
+                <RichTextBlock x:Name="RichTextBlock11" Language="en" 
+                               Style="{StaticResource EnRegularText}"
+                               ToolTipService.ToolTip="Paragraph11"
+                               ap:Audio.TimeSpan="0:7:04.0_0:7:20.0"
+                               Tag="浦島太郎が竜宮城で楽しい毎日を過ごしている間に、地上では何百年も経っていたのでした。">
+                    <Paragraph x:Name="Paragraph11">
+                        <Run x:Name="Run11" Text="While he had been having fun every day in the Dragon Palace, hundreds of years had passed on land." />
+                    </Paragraph>
+                </RichTextBlock>
+            </StackPanel>
+        </ScrollViewer>
+    </controls:BladeItem>
+    
+</UserControl>

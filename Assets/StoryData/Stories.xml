@@ -1,0 +1,608 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Stories count="1">
+  <Metadata>
+    <Filename>stories.xml</Filename>
+    <Uri>ms-appx:///Assets/StoryData/Stories.xml</Uri>
+  </Metadata>
+  <Story storyId="1" enTitle="Urashima Taro" jaTitle="浦島太郎" langs="en-US|ja-JP">
+    <ParagraphTuple sequenceId="0" langs="en_ja">
+      <Paragraph sequenceId="0" lang="en" timeSpan="0:0:0:0_0:0:0:0" style="Title">
+        <Content sequenceId="0" lang="en">
+          <Text sequenceId="0" lang="en">
+            <RegularRun fontStyle="Regular" text="Urashima Taro" />
+          </Text>
+          <Vocabulary sequenceId="0" lang="en">
+            <Term idx="0:13" text="Urashima Taro" meaning="浦島太郎；主要人物の 物語・民間説話" />
+          </Vocabulary>
+        </Content>
+      </Paragraph>
+      <Paragraph sequenceId="0" lang="ja" timeSpan="0:0:3:0_0:0:9:0" style="Title">
+        <Content sequenceId="0" lang="ja">
+          <Text sequenceId="0" lang="ja">
+            <RegularRun fontStyle="Regular" text="浦島太郎" />
+            <RubyRun text="浦島太郎(うらしまたろう)" />
+          </Text>
+          <Vocabulary sequenceId="0" lang="ja">
+            <Term idx="0:4" text="浦島太郎" rubyText="浦島太郎(うらしまたろう)" meaning="Urashima Taro; name of protagonist" />
+          </Vocabulary>
+        </Content>
+      </Paragraph>
+    </ParagraphTuple>
+    <ParagraphTuple sequenceId="1" langs="en_ja">
+      <Paragraph sequenceId="1" lang="en" timeSpan="0:0:0:0_0:0:0:0" style="Regular">
+        <Content sequenceId="1" lang="en">
+          <Text sequenceId="1" lang="en">
+            <RegularRun fontStyle="Regular" text="Once upon a time in a seaside village, there lived a fisherman named Urashima Taro. Urashima Taro was a young man with a kind heart; he went out to sea every day to go fishing to support his elderly father and mother." />
+          </Text>
+          <Vocabulary sequenceId="1" lang="ja">
+            <Term idx="0:16" text="Once upon a time" meaning="昔々" />
+            <Term idx="17:2" text="in" meaning="に" />
+            <Term idx="20:1" text="a" meaning="不定冠詞 (Indefinite article) 「村」を指します。 (refering to 'a village.') 'ある' (a certain, some) plays this role in Japanese." example="ある海辺の村「a seaside village」" />
+            <Term idx="22:7" text="seaside" meaning="海辺" />
+            <Term idx="30:7" text="village" meaning="村" />
+            <Term idx="39:5" text="there" meaning="何かが存在する、または存在すると言っていました。" />
+            <Term idx="45:5" text="lived" meaning="住む、住んでいました。" />
+            <Term idx="53:9" text="fisherman" meaning="漁師" />
+            <Term idx="63:5" text="named" meaning="という" example="浦島太郎という漁師が住んでいました。" />
+            <Term idx="98:3" text="was" meaning="だった" />
+            <Term idx="104:9" text="young man" meaning="若者、若人" />
+            <Term idx="104:4" text="with" meaning="で" />
+            <Term idx="121:4" text="kind" meaning="やさしい" />
+            <Term idx="126:5" text="heart" meaning="心" example="浦島太郎は心のやさしい若者で" />
+            <Term idx="133:2" text="he" meaning="かれ" />
+            <Term idx="133:2" text="went out" meaning="出る" />
+            <Term idx="145:6" text="to sea" meaning="海へ" />
+            <Term idx="152:9" text="every day" meaning="毎日" example="かれは毎日海へ出かけて" />
+            <Term idx="162:13" text="to go fishing" meaning="魚をつって出る、釣りに行く。" />
+            <Term idx="176:10" text="to support" meaning="養う、ふようする" />
+            <Term idx="187:2" text="his" meaning="彼の" />
+            <Term idx="191:7" text="elderly" meaning="年老いた" />
+            <Term idx="199:6" text="father" meaning="お父さん" />
+            <Term idx="206:3" text="and" meaning="と" />
+            <Term idx="210:6" text="mother" meaning="お母さん" />
+          </Vocabulary>
+        </Content>
+      </Paragraph>
+      <Paragraph sequenceId="1" lang="ja" timeSpan="0:0:9:0_0:0:36:0" style="Regular">
+        <Content sequenceId="1" lang="ja">
+          <Text sequenceId="1" lang="ja">
+            <RegularRun fontStyle="Regular" text="昔々、ある海辺の村に、浦島太郎という漁師が住んでいました。浦島太郎は心のやさしい若者で、毎日海へ出かけて魚をつって年老いたお父さんとお母さんを養っていました。" />
+            <PauseRun text="昔々、ある/海辺の村に、浦島太郎という/漁師が/住んでいました。浦島太郎は/心のやさしい若者で、毎日/海へ出かけて/魚をつって/年老いたお父さんとお母さんを/養っていました。" />
+            <RubyRun text="昔々(むかしむかし)、ある/海辺(うみべ)の村(むら)に、浦島太郎(うらしまたろう)という/漁師(りょうし)が/住(す)んでいました。浦島太郎は/心(こころ)のやさしい若者(わかもの)で、毎日(まいにち)/海(うみ)へ出(で)かけて/魚(さかな)をつって/年老(としお)いたお父(とう)さんとお母(かあ)さんを/養(やしな)っていました。" />
+          </Text>
+          <Vocabulary sequenceId="1" lang="ja">
+            <Term idx="0:2" text="昔々" rubyText="昔々(むかしむかし)" meaning="once upon a time" />
+            <Term idx="3:2" text="ある" rubyText="" meaning="some" example="ある人がここへ来ました。「Some person came here.」" />
+            <Term idx="5:2" text="海辺" rubyText="海辺(うみべ)" meaning="seashore" />
+            <Term idx="8:1" text="村" rubyText="村(むら)" meaning="village" />
+            <Term idx="11:4" text="浦島太郎" rubyText="浦島太郎(うらしまたろう)" meaning="Urashimataroo the name of the protagonist 「Urashima Taro」" />
+            <Term idx="15:3" text="という" rubyText="" meaning="... called ..." example="横浜という所を知っていいますか。「Do you know the place called Yokohama?」" />
+            <Term idx="18:2" text="漁師" rubyText="漁師(りょうし)" meaning="fisherman" />
+            <Term idx="21:1" text="住む" rubyText="住(す)む" meaning="to live, to reside" example="父は東京に住んでいます。「My father lives in Toyko.」" />
+            <Term idx="34:1" text="心" rubyText="心(こころ)" meaning="heart" />
+            <Term idx="36:4" text="やさしい" rubyText="" meaning="kind" />
+            <Term idx="40:2" text="若者" rubyText="若者(わかもの)" meaning="young person" />
+            <Term idx="44:2" text="毎日" rubyText="毎日(まいにち)" meaning="every day" />
+            <Term idx="46:1" text="海" rubyText="海(うみ)" meaning="sea, ocean" />
+            <Term idx="48:1" text="出る" rubyText="出(で)る" meaning="to come out" />
+            <Term idx="52:4" text="魚をつる" rubyText="魚(さかな)をつる" meaning="to fish" />
+            <Term idx="57:4" text="年老いた" rubyText="年老(としお)いた" meaning="elderly, old" />
+            <Term idx="61:4" text="お父さん" rubyText="お父(とう)さん" meaning="father" />
+            <Term idx="66:4" text="お母さん" rubyText="お母(かあ)さん" meaning="mother" />
+            <Term idx="71:1" text="養う" rubyText="養(やしな)う" meaning="to support someone for a living" />
+          </Vocabulary>
+        </Content>
+      </Paragraph>
+    </ParagraphTuple>
+    <ParagraphTuple sequenceId="2" langs="en_ja">
+      <Paragraph sequenceId="2" lang="en" timeSpan="0:0:0:0_0:0:0:0" style="Regular">
+        <Content sequenceId="2" lang="en">
+          <Text sequenceId="2" lang="en">
+            <RegularRun fontStyle="Regular" text="One day, on his way back from the sea, Urashima Taro saw some children gathered on the beach, making a lot of noise. He saw that they had caught a small baby turtle, and that they were all tormenting it by poking it with a stick. He felt sorry for the poor baby turtle. He said to the children, “You must not torment living creatures!” and saved the baby turtle. He took it in his hand and returned it to the water. The turtle was happy, and it popped its head and legs out of its shell and started to swim with no trouble at all, returning to the bottom of the sea." />
+          </Text>
+          <Vocabulary sequenceId="2" lang="en">
+            <Term idx="0:3" text="one" meaning="ある" />
+            <Term idx="4:3" text="day" meaning="日" example="ある日" />
+            <Term idx="9:2" text="on" meaning="…に向かって、…の方に" explanation="前置詞（prep.）" />
+            <Term idx="12:3" text="his" meaning="彼" />
+            <Term idx="16:3" text="way" meaning="途中（で）" example="途中の目印は何ですか。" />
+            <Term idx="19:4" text="back" meaning="帰る" explanation="on way back、帰る途中で" />
+            <Term idx="25:4" text="from" meaning="から" explanation="前置詞（prep.）" />
+            <Term idx="30:3" text="the" meaning="その、あの、例の" example="その本は高いです。" explanation="ていかんし (def. art.)" />
+            <Term idx="34:3" text="sea" meaning="海" example="海から帰る途中" />
+            <Term idx="53:3" text="saw" meaning="みる、見た" />
+            <Term idx="57:4" text="some" meaning="ある、何かの" />
+            <Term idx="62:8" text="children" meaning="子供たち" example="何かの子供たち" />
+            <Term idx="71:8" text="gathered" meaning="集まる、集まって" />
+            <Term idx="80:2" text="on" meaning="で" />
+            <Term idx="83:3" text="the" meaning="その、あの、例の" example="その本は高いです。" explanation="ていかんし (def. art.)"/>
+            <Term idx="87:5" text="beach" meaning="浜" example="浜で子供たちが集まって" />
+            <Term idx="94:6" text="making" meaning="(do) ... をする、騒ぐ" />
+            <Term idx="101:1" text="a" meaning="１．一つ、りんごひとつ、１時間、2．ある、ある意味で、３．というもの、いぬ（というもの）は忠実な動物でえす、４．に（つき）、私は１日に（つき）７ 時間働く。" explantion="不定冠詞（indef. art.）" />
+            <Term idx="107:2" text="of" meaning="の" explanation="前置詞（prep.）、make 'a' lot of noise, 騒ぐ" />
+            <Term idx="110:5" text="noise" meaning="形容詞、うるさい、騒ぐ" example="浜で子供たちが集まって騒いでいるのを見ました。" />
+            <Term idx="117:2" text="He" meaning="彼" />
+            <Term idx="120:3" text="saw" meaning="見る、みました。" />
+            <Term idx="124:4" text="that" meaning="あれ" example="あれはだれですか。" />
+            <Term idx="129:4" text="they" meaning="代名詞、あの人たち。" />
+            <Term idx="134:3" text="had" meaning="がいる" />
+            <Term idx="138:6" text="caught" meaning="お捕まえる" />
+            <Term idx="147:5" text="small" meaning="小さい" />
+            <Term idx="120:3" text="baby" meaning="赤ちゃん" example="亀の子" />
+            <Term idx="158:6" text="turtle" meaning="亀" exampl="小さい亀の子" />
+            <Term idx="166:3" text="and" meaning="と" />
+            <Term idx="180:4" text="were" meaning="だった" />
+            <Term idx="185:3" text="all" meaning="皆" />
+            <Term idx="189:10" text="tormenting" meaning="「いじめる」いじめて" />
+            <Term idx="200:1" text="it" meaning="それ、あれは、あれが" explanation="「文法 」代名詞" />
+            <Term idx="203:2" text="by" meaning="で、によって" explanation="前置詞" />
+            <Term idx="206:6" text="poking" meaning="突つく（つっつく）" />
+            <Term idx="216:4" text="with" meaning="で、をつかって" />
+            <Term idx="223:5" text="stick" meaning="棒" />
+            <Term idx="230:2" text="he" meaning="彼" />
+            <Term idx="233:4" text="felt" meaning="と思う" />
+            <Term idx="238:5" text="sorry" meaning="気の毒な" />
+            <Term idx="244:3" text="for" meaning="のために" explanation="前置詞（prep.）" />
+            <Term idx="252:4" text="poor" meaning="かわいそうな" />
+            <Term idx="257:11" text="baby turtle" meaning="亀の子" />
+            <Term idx="273:4" text="said" meaning="言う" example="said to the children" />
+            <Term idx="296:3" text="you" meaning="あなた、あなたがた" />
+            <Term idx="300:8" text="must not" meaning="てはいけない" />
+            <Term idx="309:7" text="torment" meaning="いじめる" />
+            <Term idx="317:16" text="living creatures" meaning="生き物" />
+            <Term idx="340:5" text="saved" meaning="助ける" />
+            <Term idx="366:4" text="took" meaning="…を持つ" />
+            <!-- unfinished below -->
+            <Term idx="273:4" text="He took it in his hand and returned it to the water" meaning="" />
+            <Term idx="273:4" text="The turtle (亀) was happy (喜ぶ)" meaning="" />
+            <Term idx="273:4" text="and it popped its head and legs out of its shell" meaning="" />
+            <Term idx="273:4" text="and started to swim with no trouble at all" meaning="" />
+            <Term idx="273:4" text="returning to the bottom of the sea" meaning="" />
+          </Vocabulary>
+        </Content>
+      </Paragraph>
+      <Paragraph sequenceId="2" lang="ja" timeSpan="0:0:36:0_0:1:45:0" style="Regular">
+        <Content sequenceId="1" lang="ja">
+          <Text sequenceId="2" lang="ja">
+            <RegularRun fontStyle="Regular" text="ある日、浦島太郎は海から帰る途中、浜で子供たちが集まって騒いでいるのを見ました。のぞいてみると、小さい亀の子を一匹つかまえて、皆で棒でつっついていじめていました。その亀の子をかわいそうだと思った浦島太郎は、「生き物をいじめてはいけないぞ。」と、子供たちに言って、亀の子を助けてやりました。太郎が亀の子を手にのせて海の水の中に戻してやると、亀の子は喜んで甲羅から首や手足を出して、すいすいと泳ぎ始めました。そして、海の底の方へ戻って行きました。" />
+            <PauseRun text="ある日、浦島太郎は/海から/帰る途中、浜で/子供たちが集まって/騒いでいるのを/見ました。のぞいてみると、小さい亀の子を/一匹つかまえて、皆で/棒でつっついて/いじめていました。その亀の子を/かわいそうだと思った/浦島太郎は、「生き物を/いじめては/いけないぞ。」と、子供たちに/言って、亀の子を/助けてやりました。太郎が/亀の子を/手にのせて/海の水の中に/戻してやると、亀の子は喜んで/甲羅から/首や手足を/出して、すいすいと/泳ぎ始めました。そして、海の底の方へ/戻って/行きました。" />
+            <RubyRun text="ある日(ひ)、浦島太郎は/海から/帰(かえ)る途中(とちゅう)、浜(はま)で/子供(こども)たちが集(あつ)まって/騒(さわ)いでいるのを/見(み)ました。のぞいてみると、小(ちい)さい亀(かめ)の子(こ)を/一匹(いっぴき)つかまえて、皆(みな)で/棒(ぼう)でつっついて/いじめていました。その亀の子を/かわいそうだと思(おも)った/浦島太郎は、「生(い)き物(もの)を/いじめては/いけないぞ。」と、子供(こども)たちに/言(い)って、亀の子を/助(たす)けてやりました。太郎が/亀の子を/手(て)にのせて/海の水(みず)の中(なか)に/戻(もど)してやると、亀の子は喜(よろこ)んで/甲羅(こうら)から/首(くび)や手足(てあし)を/出(だ)して、すいすいと/泳(およ)ぎ始(はじ)めました。そして、海の底(そこ)の方(ほう)へ/戻(もど)って行(い)きました。" />
+          </Text>
+          <Vocabulary sequenceId="2" lang="ja">
+            <Term idx="0:3" text="ある日" rubyText="ある日(ひ)" meaning="one day" />
+            <Term idx="9:3" text="海から" rubyText="海(うみ)から" meaning="from the sea" />
+            <Term idx="12:2" text="帰る" rubyText="帰(かえ)る" meaning="to go home" example="海から帰る「return home from the sea」" />
+            <Term idx="14:2" text="途中" rubyText="途中(とちゅう)" meaning="on the way" />
+            <Term idx="17:1" text="浜" rubyText="浜(はま)" meaning="beach, seashore" />
+            <Term idx="19:2" text="子供" rubyText="子供(こども)たち" meaning="child" explanation="~(橘)たち 「plural marker attached to personal pronouns」" />
+            <Term idx="24:4" text="集まる" rubyText="集(あつ)まる" meaning="to gather" />
+            <Term idx="28:3" text="騒ぐ" rubyText="騒(さわ)ぐ" meaning="to make noise" example="集まって騒いている　「gathered making noise」" />
+            <Term idx="35:1" text="見る" rubyText="見(み)る" meaning="to see" />
+            <Term idx="40:3" text="のぞく" rubyText="" meaning="to peek" />
+            <Term idx="46:1" text="と" rubyText="" meaning="...to when" explanation="のぞいてみると 「The particle と follows a verb or adjective in the plain form, and means 'when' if the main clause is in the past tense. 」" example="図書館に行くと、マイクさんに会いました。「Toshokan ni iku to, Maiku-san ni aimashita. When I went to the library I saw Mike.」" />
+            <Term idx="44:3" text="みると" rubyText="" meaning="to see" example="覗いて見ると「to look in, peek in」" />
+            <Term idx="51:1" text="亀" rubyText="亀(かめ)" meaning="turtle" />
+            <Term idx="51:3" text="亀の子" rubyText="亀(かめ)の子(こ)" meaning="baby turtle" />
+            <Term idx="55:2" text="一匹" rubyText="一匹(ippiki)" meaning="one small animal" explanation="Counter for small animals." />
+            <Term idx="57:4" text="つかまえ" rubyText="" meaning="to catch" />
+            <Term idx="63:2" text="皆で" rubyText="皆(みな)で" meaning="with everyone as a group" />
+            <Term idx="65:1" text="棒" rubyText="棒(ぼう)" meaning="stick" />
+            <Term idx="67:4" text="突つく" rubyText="突(つ)つく" meaning="突く（つっつく）、to poke" />
+            <Term idx="72:4" text="いじめる" rubyText="" meaning="to torment, to tease" />
+            <Term idx="87:6" text="かわいそうな" rubyText="" meaning="pitiful" />
+            <Term idx="94:3" text="思う" rubyText="思(おも)う" meaning="to think" />
+            <Term idx="104:3" text="生き物" rubyText="生(い)き物(もの)" meaning="living thing, creature" />
+            <Term idx="111:6" text="てはいけない" rubyText="" meaning="must not do" />
+            <Term idx="117:1" text="ぞ" rubyText="" meaning="~ぞ「particle used to emphasize one's opinions or wishes」" />
+            <Term idx="120:1" text="と" rubyText="" meaning="と「particle used mark a quotation, sound, or manner verb」" example="「私は学生です。」と" />
+            <Term idx="126:3" text="言う" rubyText="言(い)う" meaning="to say, saying" />
+            <Term idx="134:3" text="助ける" rubyText="助(たす)ける" meaning="to save" />     
+            <Term idx="150:1" text="手" rubyText="手(て)" meaning="hand" />
+            <Term idx="152:3" text="のせる" rubyText="" meaning="to place on" example="手にのせる 「take into, place onto hand」" />
+            <Term idx="155:6" text="海の水の中に" rubyText="海(うみ)の水の中に" meaning="inside sea" />
+            <Term idx="161:3" text="戻す" rubyText="戻(もど)す" meaning="to return" example="お金を戻しました。「(I) Returned the money.」" />
+            <Term idx="172:3" text="喜ぶ" rubyText="喜(よろこ)ぶ・喜んだ" meaning="was delighted, was happy, rejoiced" />
+            <Term idx="175:2" text="甲羅" rubyText="甲羅(こうら)" meaning="the hard upper shell of a turtle" />
+            <Term idx="179:1" text="首" rubyText="首(くび)" meaning="neck" />
+            <Term idx="181:2" text="手足" rubyText="手足(てあし)" meaning="hands/arms and feet/legs, limbs" />
+            <Term idx="184:1" text="出す" rubyText="出(だ)す" meaning="take something out" />
+            <Term idx="188:4" text="すいすい" rubyText="" meaning="swimming smoothly" explanation="mimetic sound" />
+            <Term idx="193:2" text="泳ぐ" rubyText="泳(およ)ぐ" meaning="to swim" />
+            <Term idx="195:2" text="始める" rubyText="始(はじ)める" meaning="to start" />
+            <Term idx="207:1" text="底" rubyText="底(そこ)" meaning="bottom" />
+            <Term idx="207:1" text="方" rubyText="方(ほう)" meaning="direction" />
+            <Term idx="211:1" text="戻る" rubyText="戻(もど)る" meaning="to return" example="父が戻りました。「My father returned.」" />
+            <Term idx="214:2" text="行く" rubyText="行(い)く" meaning="go away, leave" />
+          </Vocabulary>
+        </Content>
+      </Paragraph>
+    </ParagraphTuple>
+    <ParagraphTuple sequenceId="3" langs="en_ja">
+      <Paragraph sequenceId="3" lang="en" timeSpan="0:1:43:0_0:2:28:0" style="Regular">
+        <Content sequenceId="3" lang="en">
+          <Text sequenceId="3" lang="en">
+            <RegularRun fontStyle="Regular" text="One day, two or three years later, Urashima Taro was once again out at the sea fishing when he heard a voice call out from behind him, “Mr. Urashima Taro! Mr. Urashima!” When he looked behind him, a big turtle was approaching the boat." />
+          </Text>
+          <Vocabulary sequenceId="3" lang="en" />
+        </Content>
+      </Paragraph>
+      <Paragraph sequenceId="3" lang="ja" timeSpan="0:1:44:0_00:2:15:40" style="Regular">
+        <Content sequenceId="3" lang="ja">
+          <Text sequenceId="3" lang="ja">
+            <RegularRun fontStyle="Regular" text="それから二、三年たったある日のことです。浦島太郎はまた舟にのって海で魚をつっていました。すると、うしろのほうで、「浦島さん、浦島さん！」と、呼ぶ声がしました。" />
+            <PauseRun text="それから/二、三年たった/ある日のことです。浦島太郎は/また舟にのって/海で/魚をつっていました。すると、うしろのほうで、「浦島さん、浦島さん！」と、呼ぶ声が/しました。" />
+            <RubyRun text="それから/二(に)、三(さん)年(ねん)たった/ある日(ひ)のことです。浦島太郎は/また舟(ふね)にのって/海(うみ)で/魚(さかな)をつっていました。すると、うしろのほうで、「浦島さん、浦島さん！」と、呼(よ)ぶ声(こえ)がしました。" />
+          </Text>
+          <Vocabulary sequenceId="3" lang="ja">
+            <Term idx="4:5 " text="二、三年" rubyText="二、三年(にさんねん)" meaning="one or two years" />
+            <Term idx="8:3" text="たった" rubyText="" meaning="just, merely, only" example="駅までここからたった五分です。「The station is just five minutes from here.」" />
+            <Term idx="11:6" text="ある日のこと" rubyText="" meaning="one day" />
+            <Term idx="25:2" text="また" rubyText="" meaning="again" />
+            <Term idx="27:1" text="舟" rubyText="舟(ふね)" meaning="boat" />
+            <Term idx="27:5" text="舟にのって" rubyText="" meaning="on a boat" />
+            <Term idx="32:7" text="海で魚をつって" rubyText="海(うみ)で魚(さかな)をつって" meaning="fishing on the sea" />
+            <Term idx="45:3" text="すると" rubyText="" meaning="thereupon ~; then ~; and ~" />
+            <Term idx="63:3" text="うしろ" rubyText="" meaning="back" />
+            <Term idx="63:3" text="方" rubyText="方(ほう)" meaning="direction" example="うしろの方で 「direction from behind」" />
+            <Term idx="69:2" text="呼ぶ" rubyText="呼(よ)ぶ" meaning="to call out" />
+            <Term idx="88:1" text="声" rubyText="声(こえ)" meaning="to call out" />
+          </Vocabulary>
+        </Content>
+      </Paragraph>
+    </ParagraphTuple>
+    <ParagraphTuple sequenceId="4" langs="en_ja">
+      <Paragraph sequenceId="4" lang="en" timeSpan="0:0:0:0_0:0:0:0" style="Regular">
+        <Content sequenceId="4" lang="en">
+          <Text sequenceId="4" lang="en">
+            <RegularRun fontStyle="Regular" text="When he looked behind him, a big turtle was approaching the boat. “Sir, I am the turtle that you saved. As a sign of my gratitude, I will guide you to the Dragon Palace at the bottom of the sea,” the turtle said. The turtle put Urashima Taro onto its back and started swimming. When it dived under the blue sea a short time later, their surroundings were suddenly illuminated. They were surrounded by a coral reef, and schools of beautiful fish were swimming by. After they had been going for a while, an elegant gateway came into view in front of them. A fish led Urashima Taro into the Dragon Palace." />
+          </Text>
+          <Vocabulary sequenceId="4" lang="en">
+            <Term idx="0:4" text="When" meaning="null" />
+          </Vocabulary>
+        </Content>
+      </Paragraph>
+      <Paragraph sequenceId="4" lang="ja" timeSpan="00:2:15:40_0:3:40:0" style="Regular">
+        <Content sequenceId="4" lang="ja">
+          <Text sequenceId="4" lang="ja">
+            <RegularRun fontStyle="Regular" text="ふりかえって、一匹の大きい亀が舟のそばにきていました。「わたくしは、前に助けていただいた亀でございます。お礼に海の底にある竜宮城にご案内いたしましょう。」と、亀が言いました。亀は背中に浦島太郎をのせて泳ぎ出しました。青い海中をしばらく潜っていくと、急にまわりが明るくなりました。あたり一面は珊瑚礁になり、きれいな魚がたくさん泳いでいました。そして、またしばらく行くと、向こうに立派な門が見えました。魚たちは浦島太郎を竜宮城の中に案内しました。" />
+            <PauseRun text="ふりかえって、一匹の大きい亀が/舟のそばに/きていました。「わたくしは、前に/助けていただいた/亀でございます。お礼に/海の底にある/竜宮城に/ご案内いたしましょう。」と、亀が/言いました。亀は/背中に/浦島太郎をのせて/泳ぎ出しました。青い海中を/しばらく/潜っていくと、急に/まわりが/明るくなりました。あたり一面は/珊瑚礁になり、きれいな魚が/たくさん泳いでいました。そして、また/しばらく行くと、向こうに/立派な門が/見えました。魚たちは/浦島太郎を/竜宮城の中に/案内しました。" />
+            <RubyRun text="ふりかえって、一匹(いっぴき)の大きい亀が/舟のそばに/きていました。「わたくしは、前(まえ)に/助(たす)けていただいた/亀でございます。お礼に/海の底(そこ)にある/竜宮城に/ご案内(あんない)いたしましょう。」と、亀が/言(い)いました。亀は/背中(せなか)に/浦島太郎をのせて/泳(およ)ぎ出(だ)しました。青(あお)い海中(かいちゅう)を/しばらく/潜(もぐ)っていくと、急(きゅう)に/まわりが/明(あか)るくなりました。あたり一面(いちめん)は/珊瑚礁(さんごしょう)になり、きれいな魚(さかな)が/たくさん泳(およ)いでいました。そして、また/しばらく行(い)くと、向(む)こうに/立派(りっぱ)な門(もん)が/見(み)えました。魚(さかな)たちは/浦島太郎を/竜宮城(りゅうぐうじょう)の中(なか)に/案内(あんない)しました。" />
+          </Text>
+          <Vocabulary sequenceId="4" lang="ja">
+            <Term idx="0:4" text="ふりかえる" rubyText="" meaning="to turn around" />
+            <Term idx="7:3" text="一匹き" rubyText="一匹(いっぴ)き" meaning="one small animal" />
+            <Term idx="11:3" text="大きい" rubyText="大(おお)きい" meaning="big" />
+            <Term idx="18:2" text="そば" rubyText="" meaning="near" example="そばにきて 「comming near」" />
+            <Term idx="29:4" text="わたくし" rubyText="" meaning="I" />
+            <Term idx="35:2" text="前に" rubyText="前(まえ)に" meaning="earlier, before" />
+            <Term idx="37:3" text="助ける" rubyText="助(たす)ける" meaning="to save" />
+            <Term idx="40:5" text="いただいた" rubyText="頂(ただ)く" meaning="to get, to receive" example="これは先生からいただいた辞書です。「This is a dictionary that I got from my teacher.」" />
+            <Term idx="53:3" text="お礼に" rubyText="お礼(れい)に" meaning="to thank (him/her)" />
+            <Term idx="56:1" text="海" rubyText="海(うみ)" meaning="sea" />
+            <Term idx="58:1" text="底" rubyText="底(そこ)" meaning="bottom" example="海の底にある「place at the bottom of the sea」" />
+            <Term idx="62:3" text="竜宮城" rubyText="竜宮城(りゅうぐうじょう)" meaning="Dragon Palace" />
+            <Term idx="66:1" text="ご" rubyText="御(ご)" meaning="pref. Added to a noun, usually of Chinese origin. Indicates respect towards listener and humility on part of speaker." />
+            <Term idx="67:2" text="案内する" rubyText="案内(あんない)する" meaning="to guide" />
+            <Term idx="82:1" text="言う" rubyText="言(い)う" meaning="to say, saying" />
+            <Term idx="90:2" text="背中" rubyText="背中(せなか)" meaning="back" example="せなかに「on back」" />
+            <Term idx="98:2" text="のせる" rubyText="載(の)せる" meaning="to place on" example="亀は背中に浦島太郎をのせて「The turtle put Urashima Taroo onto its back.」" />
+            <Term idx="101:2" text="泳ぎ" rubyText="泳(およ)ぐ" meaning="to swim" />
+            <Term idx="103:1" text="出す" rubyText="出(だ)す" meaning="to start, starting, (trans.) begin doing" example="泳ぎ出す「begin swimming」" />
+            <Term idx="109:2" text="青い" rubyText="青(あお)い" meaning="blue" />
+            <Term idx="111:2" text="海中" rubyText="海中(かいちゅう)" meaning="in the sea" example="青い海中「the blue sea」" />
+            <Term idx="114:4" text="しばらく" rubyText="" meaning="for a while" />
+            <Term idx="118:1" text="潜" rubyText="潜(もぐ)る" meaning="to go under" />
+            <Term idx="125:2" text="急に" rubyText="急(きゅう)に" meaning="suddenly" />
+            <Term idx="127:3" text="まわり" rubyText="" meaning="surroundings" />
+            <Term idx="131:3" text="明るく" rubyText="明(あか)るい" meaning="suddenly" />
+            <Term idx="134:2" text="なる" rubyText="" meaning="to become" />
+            <Term idx="140:3" text="あたり" rubyText="" meaning="vicinity, nearby" />
+            <Term idx="143:2" text="一面" rubyText="一面(いちめん)" meaning="the whole surface" />
+            <Term idx="146:3" text="珊瑚礁" rubyText="珊瑚礁(さんごしょう)" meaning="coral reef" />
+            <Term idx="153:5" text="きれいな魚がたくさん" rubyText="きれいな魚(さかな)たくさん" meaning="many pretty fish" />
+            <Term idx="163:3" text="泳ぐ" rubyText="泳(およ)いで" meaning="swimming" />
+            <Term idx="175:2" text="また" rubyText="" meaning="again" />
+            <Term idx="177:4" text="しばらく" rubyText="" meaning="after a while" />
+            <Term idx="181:3" text="行くと" rubyText="" meaning="go and" />
+            <Term idx="185:3" text="向こう" rubyText="向(む)こう" meaning="over there" />
+            <Term idx="189:3" text="立派な" rubyText="立派(りっぱ)な" meaning="splended" />
+            <Term idx="192:1" text="門" rubyText="門(もん)" meaning="gate" />
+            <Term idx="194:2" text="見える" rubyText="見(み)える" meaning="to appear, come into view" />
+            <Term idx="200:3" text="魚たち" rubyText="魚(さかな)たち" meaning="plural fish" />
+            <Term idx="209:6" text="竜宮城の中に" rubyText="竜宮城(りゅうぐうじょう)の中(なか)に" meaning="into the Dragon Palace" />
+            <Term idx="215:2" text="案内する" rubyText="案内(あんない)する" meaning="to guide" />
+          </Vocabulary>
+        </Content>
+      </Paragraph>
+    </ParagraphTuple>
+    <ParagraphTuple sequenceId="5" langs="en_ja">
+      <Paragraph sequenceId="5" lang="en" timeSpan="0:0:0:0_0:0:0:0" style="Regular">
+        <Content sequenceId="5" lang="en">
+          <Text sequenceId="5" lang="en">
+            <RegularRun fontStyle="Regular" text="Inside the Dragon Palace, there was a beautiful princess. “Welcome to the Dragon Palace. Thank you for saving the turtle the other day. Please, relax and enjoy yourself,” she said with a kind voice." />
+          </Text>
+          <Vocabulary sequenceId="5" lang="en">
+            <Term idx="0:6" text="Inside" meaning="null" />
+          </Vocabulary>
+        </Content>
+      </Paragraph>
+      <Paragraph sequenceId="5" lang="ja" timeSpan="0:3:40:0_0:4:10:0" style="Regular">
+        <Content sequenceId="5" lang="ja">
+          <Text sequenceId="5" lang="ja">
+            <RegularRun fontStyle="Regular" text="竜宮城の中には美しいおとひめさまがいて、「ようこそ竜宮城へいらっしゃいました。先日は亀を助けてくださってありがとうございました。どうぞゆっくり遊んでいってください。」と、やさしい声で言いました。" />
+            <PauseRun text="竜宮城の中には/美しいおとひめさまがいて、「ようこそ/竜宮城へ/いらっしゃいました。先日は/亀を助けてくださって/ありがとうございました。どうぞ/ゆっくり/遊んでいってください。」と、やさしい声で/言いました。" />
+            <RubyRun text="竜宮城(りゅうぐうじょう)の中(なか)には/美(うつく)しいおとひめさまがいて、「ようこそ/竜宮城へ/いらっしゃいました。先日(せんじつ)は/亀を助(たす)けてくださって/ありがとうございました。どうぞ/ゆっくり遊(あそ)んでいってください。」と、やさしい声(こえ)で言(い)いました。" />
+          </Text>
+          <Vocabulary sequenceId="5" lang="ja">
+            <Term idx="0:3" text="竜宮城" rubyText="竜宮城(りゅうぐうじょう)" meaning="Dragon Palace" />
+            <Term idx="7:1" text="美" rubyText="美(うつく)しい" meaning="beautiful" />
+            <Term idx="11:3" text="乙姫様" rubyText="乙姫様(おとひめさま)" meaning="Princess Oto, Lady Otohime" />
+            <Term idx="39:2" text="先日" rubyText="先日(せんじつ)" meaning="the other day" />
+            <Term idx="43:3" text="助ける" rubyText="助(たす)ける" meaning="to save" />
+            <Term idx="46:4" text="くださる" rubyText="" meaning="give s.o. s.t." />
+            <Term idx="63:3" text="どうぞ" rubyText="" meaning="please" />
+            <Term idx="66:4" text="ゆっくり" rubyText="" meaning="slowly, without hurry, leisurely" />
+            <Term idx="70:1" text="遊ぶ" rubyText="遊(おそ)ぶ" meaning="to enjoy oneself" />
+            <Term idx="73:3" text="行く" rubyText="行(い)く" meaning="-te form of to go" />
+            <Term idx="85:4" text="やさしい" rubyText="" meaning="kind" />
+            <Term idx="89:1" text="声" rubyText="声(こえ)" meaning="voice" example="やさしい声で言いました。「s.o. said with a kind voice.」" />
+          </Vocabulary>
+        </Content>
+      </Paragraph>
+    </ParagraphTuple>
+    <ParagraphTuple sequenceId="6" langs="en_ja">
+      <Paragraph sequenceId="6" lang="en" timeSpan="0:0:0:0_0:0:0:0" style="Regular">
+        <Content sequenceId="6" lang="en">
+          <Text sequenceId="6" lang="en">
+            <RegularRun fontStyle="Regular" text="After that, Urashima Taro watched the beautiful fish dance, drank sake, enjoyed wondrous feasts, merrily chatted with the princess, and lived every day like it was dream in the Palace." />
+          </Text>
+          <Vocabulary sequenceId="6" lang="en">
+            <Term idx="0:5" text="After" meaning="null" />
+          </Vocabulary>
+        </Content>
+      </Paragraph>
+      <Paragraph sequenceId="6" lang="ja" timeSpan="0:4:11:0_0:4:36:0" style="Regular">
+        <Content sequenceId="6" lang="ja">
+          <Text sequenceId="6" lang="ja">
+            <RegularRun fontStyle="Regular" text="それから、浦島太郎は竜宮城できれいな魚たちの踊りをみたり、お酒を飲んだり、すばらしいご馳走を食べたり、乙姫様と楽しくお話ししたりして、夢のような毎日を過ごしました。" />
+            <PauseRun text="それから、浦島太郎は/竜宮城で/きれいな魚たちの踊りを/みたり、お酒を/飲んだり、すばらしいご馳走を/食べたり、乙姫様と/楽しく/お話し/したりして、夢のような/毎日を/過ごしました。" />
+            <RubyRun text="それから、浦島太郎は/竜宮城で/きれいな魚(さかな)たちの踊(おど)りを/みたり、お酒(さけ)を/飲(の)んだり、すばらしいご馳走(ちそう)を/食(た)べたり、乙姫様(おとひめさま)と/楽(たの)しく/お話(はな)ししたりして、夢(ゆめ)のような/毎日(まいにち)を/過(す)ごしました。" />
+          </Text>
+          <Vocabulary sequenceId="6" lang="ja">
+            <Term idx="0:4" text="それから" rubyText="" meaning="after than, and then" />
+            <Term idx="14:4" text="きれいな" rubyText="" meaning="beautiful" example="れいな魚たち「beautiful fish」" />
+            <Term idx="22:2" text="踊り" rubyText="踊(おど)り" meaning="dance" />
+            <Term idx="25:1" text="見る" rubyText="見(み)る" meaning="do things like to seeing ~" />
+            <Term idx="26:2" text="~たり" rubyText="" meaning="to do s.o. like, and so on ~ " example="歌ったり、踊ったりしました。「Did things like Sang, danced, etc.」" />
+            <Term idx="29:2" text="お酒" rubyText="お酒(さけ)" meaning="sake" />
+            <Term idx="32:1" text="飲む" rubyText="飲(の)む" meaning="drink" />
+            <Term idx="37:5" text="素晴らしい" rubyText="素晴(すば)らしい" meaning="wonderful, splendid, excellent" />
+            <Term idx="42:3" text="ご馳走" rubyText="ご馳走(ちそう)" meaning="feast" />
+            <Term idx="46:2" text="食べる" rubyText="食(た)べる" meaning="to eat" />
+            <Term idx="51:3" text="乙姫様" rubyText="乙姫様(おとひめさま)" meaning="Princess Oto, Lady Otohime" />
+            <Term idx="55:3" text="楽しい" rubyText="楽(たの)しい" meaning="fun, enjoyable" />
+            <Term idx="58:3" text="お話しする" rubyText="お話(はな)しする" meaning="to talk" />
+            <Term idx="67:1" text="夢" rubyText="夢(ゆめ)" meaning="dream" />
+            <Term idx="68:4" text="のような" rubyText="" meaning="just like" />
+            <Term idx="75:2" text="過ごす" rubyText="過(す)ごす" meaning="to spend (time)" />
+          </Vocabulary>
+        </Content>
+      </Paragraph>
+    </ParagraphTuple>
+    <ParagraphTuple sequenceId="7" langs="en_ja">
+      <Paragraph sequenceId="7" lang="en" timeSpan="0:0:0:0_0:0:0:0" style="Regular">
+        <Content sequenceId="7" lang="en">
+          <Text sequenceId="7" lang="en">
+            <RegularRun fontStyle="Regular" text="However, after a time, Urashima Taro became worried about his mother and father back in the village and thought that he would like to return home soon. When he told this to the princess, she gave him a beautiful box to take with him, and said, “I will miss you, but it is natural for you to want to return home. This is a " />
+            <RegularRun fontStyle="Italic" text="tamatabako" />
+            <RegularRun fontStyle="Regular" text=", a treasure box. Please take it with you and be careful returning home. But please, never open this box.”" />
+          </Text>
+          <Vocabulary sequenceId="7" lang="en">
+            <Term idx="0:7" text="However" meaning="null" />
+          </Vocabulary>
+        </Content>
+      </Paragraph>
+      <Paragraph sequenceId="7" lang="ja" timeSpan="0:4:36:0_0:5:38:0" style="Regular">
+        <Content sequenceId="7" lang="ja">
+          <Text sequenceId="7" lang="ja">
+            <RegularRun fontStyle="Regular" text="ところが、しばらくすると、浦島太郎は村にいるお父さんとお母さんのことが心配になりました。そして、早くうちに帰りたいと思いました。そのことを乙姫様に言うと、乙姫様はきれいな箱を持って来てこう言いました。「さびしくなりますが、おうちにお帰りになりたいのは当然です。これは玉手箱です。これを持って気をつけてお帰りになってください。しかし、決してこの箱を開けないでくださいね 。」" />
+            <PauseRun text="ところが、しばらくすると、浦島太郎は/村にいる/お父さんとお母さんのことが/心配になりました。そして、早く/うちに/帰りたいと/思いました。そのことを/乙姫様に言うと、乙姫様は/きれいな箱を/持って来て/こう言いました。「さびしくなりますが、おうちに/お帰りになりたいのは/当然です。これは/玉手箱です。これを/持って/気をつけて/お帰りになってください。しかし、決して/この箱を/開けないでくださいね 。」" />
+            <RubyRun text="ところが、しばらくすると、浦島太郎は/村(むら)にいる/お父さんとお母さんのことが/心配(しんぱい)になりました。そして、早(はや)く/うちに/帰(かえ)りたいと/思(おも)いました。そのことを/乙姫様(おとひめさま)に言(い)うと、乙姫様(おとひめさま)は/きれいな箱(ばこ)を/持(も)って来(き)て/こう言(い)いました。「さびしくなりますが、おうちに/お帰(かえ)りになりたいのは/当然(とうぜん)です。これは/玉手箱(たまてばこ)です。これを/持(も)って/気(き)をつけて/お帰(かえ)りになってください。しかし、決(けっ)して/この箱(はこ)を/開(あ)けないでくださいね。」" />
+          </Text>
+          <Vocabulary sequenceId="7" lang="ja">
+            <Term idx="0:4" text="ところが" rubyText="" meaning="but, however" />
+            <Term idx="5:4" text="しばらく" rubyText="" meaning="after a time" />
+            <Term idx="9:3" text="すると" rubyText="" meaning="conj., thereupon ~; then ~; and ~ " />
+            <Term idx="18:2" text="村に" rubyText="村(むら)" meaning="at/in the village" />
+            <Term idx="20:2" text="いる" rubyText="" meaning="(of a person or animal) be there; is [are] exist" />
+            <Term idx="33:2" text="こと" rubyText="" meaning="speaking about father and mother" example="お父さんとお母さんのことが" />
+            <Term idx="35:2" text="心配" rubyText="心配(しんぱい)" meaning="worry" />
+            <Term idx="38:2" text="なる" rubyText="" meaning="to become" example="心配になる" />
+            <Term idx="48:2" text="早い" rubyText="早(はや)い" meaning="early" />
+            <Term idx="50:2" text="うち" rubyText="" meaning="house, home, family" />
+            <Term idx="53:2" text="帰る" rubyText="帰(かえ)る" meaning="return" />
+            <Term idx="55:2" text="~たい" rubyText="たい" meaning="to want to" example="うちに帰りたい「want to return home」" />
+            <Term idx="57:2" text="思う" rubyText="思(おも)う" meaning="to think" />
+            <Term idx="63:4" text="そのこと" rubyText="" meaning="that thing" />
+            <Term idx="68:3" text="乙姫様" rubyText="乙姫様" meaning="" />
+            <Term idx="72:3" text="言う" rubyText="言(い)う" meaning="said" example="言うと" />
+            <Term idx="80:4" text="きれいな" rubyText="きれいな箱()" meaning="pretty ~" example="きれいな箱" />
+            <Term idx="84:1" text="箱" rubyText="箱(はこ)" meaning="box" />
+            <Term idx="84:1" text="持って" rubyText="箱(も)つ" meaning="to hold, -te holding" />
+            <Term idx="84:1" text="来る" rubyText="来(き)て" meaning="come, -te coming" />
+            <Term idx="91:2" text="こう" rubyText="" meaning="this" explanation="Refers to something just mentioned or about to be mentioned." example="この本にはこう書いてあいます。「This book says as follows.」" />
+            <Term idx="93:2" text="言う" rubyText="言(い)う" meaning="said" example="こう言いました" />
+            <Term idx="100:4" text="さびしい" rubyText="" meaning="said" example="lonely" />
+            <Term idx="100:2" text="なる" rubyText="" meaning="said" example="becomes, gets to be" />
+            <Term idx="110:1" text="お" rubyText="" meaning="honorific" />
+            <Term idx="110:8" text="おうちにお帰りに" rubyText="帰(かえ)りに" meaning="return to home" />
+            <Term idx="118:4" text="なりたい" rubyText="" meaning="want to become" />
+            <Term idx="122:2" text="のは" rubyText="" meaning="n" />
+            <Term idx="124:2" text="当然" rubyText="当然(とうぜん)" meaning="natural, justified" />
+            <Term idx="132:3" text="玉手箱" rubyText="玉手箱(たまてばこ)" meaning="tamate-box" />
+            <Term idx="141:2" text="持つ" rubyText="持(も)つ" meaning="to hold" />
+            <Term idx="144:5" text="気をつける" rubyText="気(き)をつける" meaning="to be careful" />
+            <Term idx="150:3" text="帰りに" rubyText="帰(かえ)りに" meaning="return to" />
+            <Term idx="153:3" text="なる" rubyText="" meaning="becomes, gets to be" />
+            <Term idx="165:3" text="決して" rubyText="決(けっ)して" meaning="in no way" />
+            <Term idx="172:2" text="開ける" rubyText="開(お)ける" meaning="to open" />
+            <Term idx="174:3" text="ないで" rubyText="" meaning="do not, will not, cannot" example="決してこの箱を開けないでくださいね。「In no way open the tabate-box please, right?」" />
+          </Vocabulary>
+        </Content>
+      </Paragraph>
+    </ParagraphTuple>
+    <ParagraphTuple sequenceId="8" langs="en_ja">
+      <Paragraph sequenceId="8" lang="en" timeSpan="0:0:0:0_0:0:0:0" style="Regular">
+        <Content sequenceId="8" lang="en">
+          <Text sequenceId="8" lang="en">
+            <RegularRun fontStyle="Regular" text="Urashima Taro took the treasure box, got onto the turtle’s back and set off towards his village." />
+          </Text>
+          <Vocabulary sequenceId="8" lang="en">
+            <Term idx="0:13" text="Urashima Taro" meaning="null" />
+          </Vocabulary>
+        </Content>
+      </Paragraph>
+      <Paragraph sequenceId="8" lang="ja" timeSpan="0:5:38:0_0:5:49:0" style="Regular">
+        <Content sequenceId="8" lang="ja">
+          <Text sequenceId="8" lang="ja">
+            <RegularRun fontStyle="Regular" text="浦島太郎は玉手箱を持って、亀の背中にのって、村へと向かいました。" />
+            <PauseRun text="浦島太郎は/玉手箱を持って、亀の背中にのって、村へと/向かいました。" />
+            <RubyRun text="浦島太郎は/玉手箱(たまてばこ)を持(も)って、亀の背中(せなか)にのって、村(むら)へと/向(む)かいました。" />
+          </Text>
+          <Vocabulary sequenceId="8" lang="ja">
+            <Term idx="5:3" text="玉手箱" rubyText="玉手箱(たまてばこ)" meaning="treasure box" />
+            <Term idx="9:3" text="持って" rubyText="持(も)って" meaning="took into hand" />
+            <Term idx="13:5" text="亀の背中に" rubyText="亀(かめ)の背中(せなか)に" meaning="turtle's back" />
+            <Term idx="18:3" text="乗る" rubyText="乗(の)る" meaning="get on" />
+            <Term idx="22:3" text="村へと" rubyText="村(むら)へと" meaning="to village and" />
+            <Term idx="25:2" text="向かう" rubyText="向(む)かう" meaning="head towards (village)" />
+          </Vocabulary>
+        </Content>
+      </Paragraph>
+    </ParagraphTuple>
+    <ParagraphTuple sequenceId="9" langs="en_ja">
+      <Paragraph sequenceId="9" lang="en" timeSpan="0:0:0:0_0:0:0:0" style="Regular">
+        <Content sequenceId="9" lang="en">
+          <Text sequenceId="9" lang="en">
+            <RegularRun fontStyle="Regular" text="However, when he arrived at the shore, everything around him had completely changed. There were people there as he walked towards the village but he knew none of them. His own house in the village was gone. No matter how many times he called out to his mother and father, they couldn’t be found. Urashima Taro was very shaken up." />
+          </Text>
+          <Vocabulary sequenceId="9" lang="en">
+            <Term idx="0:7" text="However" meaning="null" />
+          </Vocabulary>
+        </Content>
+      </Paragraph>
+      <Paragraph sequenceId="9" lang="ja" timeSpan="0:5:49:0_0:6:28:0" style="Regular">
+        <Content sequenceId="9" lang="ja">
+          <Text sequenceId="9" lang="ja">
+            <RegularRun fontStyle="Regular" text="ところが、海辺に着くと、あたりの様子はすっかり変わっていました。村の方に歩いていくと人がいましたが、どの人も知らない人でした。村には自分の家はありませんでした。お父さんもお母さんもいくら呼んでも見つかりません。浦島太郎はすっかり困ってしまいました。" />
+            <PauseRun text="ところが、海辺に着くと、あたりの様子は/すっかり/変わっていました。村の方に/歩いていくと/人がいましたが、どの人も/知らない人でした。村には/自分の家は/ありませんでした。お父さんもお母さんも/いくら呼んでも/見つかりません。浦島太郎は/すっかり/困ってしまいました。" />
+            <RubyRun text="ところが、海辺(うみべ)に着(つ)くと、あたりの様子(ようす)は/すっかり/変(か)わっていました。村(むら)の方(ほう)に/歩(ある)いていくと/人(ひと)がいましたが、どの人(ひと)も/知(し)らない人(ひと)でした。村(むら)には/自分(じぶん)の家(いえ)は/ありませんでした。お父さんもお母さんも/いくら呼(よ)んでも/見つかりません。浦島太郎は/すっかり/困(こま)ってしまいました。" />
+          </Text>
+          <Vocabulary sequenceId="9" lang="ja">
+            <Term idx="0:4" text="ところが" rubyText="" meaning="but, however" />
+            <Term idx="4:3" text="海辺に" rubyText="海辺(うみべ)に" meaning="at seashore" />
+            <Term idx="8:3" text="着くと" rubyText="着(つ)くと" meaning="to arrive" />
+            <Term idx="12:3" text="あたり" rubyText="" meaning="1. neighborhood, 2. about, around" />
+            <Term idx="16:2" text="様子" rubyText="様子(ようす)" meaning="appearance, state" />
+            <Term idx="19:4" text="すっかり" rubyText="" meaning="completely" />
+            <Term idx="23:4" text="変わる" rubyText="変わる" meaning="to change" />
+            <Term idx="32:4" text="村の方に" rubyText="村(むら)の方(ほう)に" meaning="in the direction of the village" />
+            <Term idx="36:3" text="歩く" rubyText="歩(ある)く" meaning="walk" example="村の方に歩いていくと人がいましたが、「walked towards the village with people,」" />
+            <Term idx="50:2" text="どの" rubyText="" meaning="which, what, who" />
+            <Term idx="51:1" text="人" rubyText="" meaning="person, people" example="どの人も「people which, people who ~」" />
+            <Term idx="54:5" text="知る" rubyText="知(し)る" meaning="to (get to) know" />
+            <Term idx="54:5" text="ない" rubyText="" meaning="do not, will not, can not" example="どの人も知らない人「people which one does not know ~」" />
+            <Term idx="63:3" text="村には" rubyText="" meaning="as-for at village" />
+            <Term idx="66:2" text="自分" rubyText="" meaning="self" />
+            <Term idx="69:2" text="家" rubyText="家(いえ)" meaning="house" example="自分の家は「as-for my house」" />
+            <Term idx="71:8" text="ありませんでした" rubyText="" meaning="did not exist" />
+            <Term idx="80:10" text="お父さんもお母さんも" rubyText="" meaning="both father and mother" />
+            <Term idx="90:6" text="いくら .. でも" rubyText="" meaning="no matter how　much" example="いくら早く歩いても、かれに追いつけなかった。。「No matter how fast I walked I could not keep up with him.」" />
+            <Term idx="93:3" text="呼ぶ" rubyText="呼(よ)ぶ" meaning="to call out" example="いくら呼んでも「no matter how much he called out」" />
+            <Term idx="97:4" text="見つかる" rubyText="見(み)つかる" meaning="to find" example="見つかりません「could not find」" />
+            <Term idx="97:4" text="すっかり" rubyText="" meaning="completely, perfectly" />
+            <Term idx="97:4" text="困る" rubyText="困(こま)る" meaning="to be in trouble" />
+        </Vocabulary>
+        </Content>
+      </Paragraph>
+    </ParagraphTuple>
+    <ParagraphTuple sequenceId="10" langs="en_ja">
+      <Paragraph sequenceId="10" lang="en" timeSpan="0:0:0:0_0:0:0:0" style="Regular">
+        <Content sequenceId="10" lang="en">
+          <Text sequenceId="10" lang="en">
+            <RegularRun fontStyle="Regular" text="At that moment, he suddenly caught sight of the tamatabako, and he gently tried to open it. When he did, white smoke came out from inside it. As he silently watched the smoke, in the blink of an eye the young Urashima Taro turned into an old man with white hair and white beard." />
+          </Text>
+          <Vocabulary sequenceId="10" lang="en">
+            <Term idx="0:2" text="At" meaning="null"/>
+          </Vocabulary>
+        </Content>
+      </Paragraph>
+      <Paragraph sequenceId="10" lang="ja" timeSpan="0:6:28:0_0:7:04:0" style="Regular">
+        <Content sequenceId="10" lang="ja">
+          <Text sequenceId="10" lang="ja">
+            <RegularRun fontStyle="Regular" text="その時、ふと玉手箱が目に入りました。そして、浦島太郎はそれをそっと開けてみました。すると、中から白い煙が出てきました。太郎がだまってその煙を見ていると、若者だった浦島太郎はたちまち白い髭と髪の老人になってしまいました。" />
+            <PauseRun text="その時、ふと/玉手箱が/目に入りました。そして、浦島太郎は/それを/そっと/開けてみました。すると、中から/白い煙が/出てきました。太郎が/だまって/その煙を/見ていると、若者だった浦島太郎は/たちまち/白い髭と髪の老人に/なってしまいました。" />
+            <RubyRun text="その時(とき)、ふと/玉手箱(たまてばこ)が/目(め)に入(はい)りました。そして、浦島太郎は/それを/そっと/開けてみました。すると、中(なか)から/白(しろ)い煙(けむり)が/出(で)てきました。太郎が/だまって/その煙(けむり)を/見(み)ていると、若者(わかもの)だった浦島太郎は/たちまち/白(しろ)い髭(ひげ)と髪(かみ)の老人(ろうじん)に/なってしまいました。" />
+          </Text>
+          <Vocabulary sequenceId="10" lang="ja">
+            <Term idx="0:3" text="その時" rubyText="その時(とき)" meaning="at that time" />
+            <Term idx="4:2" text="ふと" rubyText="" meaning="casually, incidently" />
+            <Term idx="6:3" text="玉手箱" rubyText="玉手箱(たまてばこ)" meaning="tamate-box" />
+            <Term idx="10:4" text="目に入る" rubyText="目(め)に入(はい)る" meaning="to happen to see" />
+            <Term idx="18:3" text="そして" rubyText="" meaning="and; and then" />
+            <Term idx="30:3" text="そっと" rubyText="" meaning="quietly" />
+            <Term idx="33:3" text="開ける" rubyText="開(あ)ける" meaning="to open" />
+            <Term idx="36:4" text="見る" rubyText="見(み)る" meaning="to see" />
+            <Term idx="41:3" text="すると" rubyText="" meaning="therupon ~, then ~; and ~" />
+            <Term idx="45:3" text="中から" rubyText="中(なか)から" meaning="come from inside" />
+            <Term idx="48:2" text="白い" rubyText="白(しろ)い" meaning="white " />
+            <Term idx="50:1" text="煙" rubyText="煙(けむり)" meaning="smoke" />
+            <Term idx="52:2" text="出て/出る" rubyText="出(で)る" meaning="to come out" />
+            <Term idx="62:4" text="だまろ" rubyText="" meaning="to be silent" />
+            <Term idx="72:3" text="いると" rubyText="いると" meaning="~ -te [-de] iru, attached to te form verb indicates continuing action" />
+            <Term idx="76:2" text="若者" rubyText="若者(わかもの)" meaning="young person" />
+            <Term idx="86:4" text="たちまち" rubyText="" meaning="in a moment" />
+            <Term idx="92:1" text="髭" rubyText="髭(ひげ)" meaning="beard, mustache" />
+            <Term idx="94:1" text="髪" rubyText="髪(かみ)" meaning="hair" example="髭と髪「beard and hair」" />
+            <Term idx="96:2" text="老人" rubyText="老人(ろうじん)" meaning="old person" />
+            <Term idx="99:3" text="なって/なる" rubyText="な(る)" meaning="become, became, becoming" />
+            <Term idx="102:3" text="しまい" rubyText="" meaning="end" note="なってしまいました, became in the end" />
+        </Vocabulary>
+        </Content>
+      </Paragraph>
+    </ParagraphTuple>
+    <ParagraphTuple sequenceId="11" langs="en_ja">
+      <Paragraph sequenceId="11" lang="en" timeSpan="0:0:0:0_0:0:0:0" style="Regular">
+        <Content sequenceId="11" lang="en">
+          <Text sequenceId="11" lang="en">
+            <RegularRun fontStyle="Regular" text="While he had been having fun every day in the Dragon Palace, hundreds of years had passed on land." />
+          </Text>
+          <Vocabulary sequenceId="11" lang="en">
+            <Term idx="0:5" text="While" meaning="null" />
+          </Vocabulary>
+        </Content>
+      </Paragraph>
+      <Paragraph sequenceId="11" lang="ja" timeSpan="0:7:04:0_0:7:20:0" style="Regular">
+        <Content sequenceId="11" lang="ja">
+          <Text sequenceId="11" lang="ja">
+            <RegularRun fontStyle="Regular" text="浦島太郎が竜宮城で楽しい毎日を過ごしている間に、地上では何百年も経っていたのでした。" />
+            <PauseRun text="浦島太郎が/竜宮城で/楽しい毎日を/過ごしている間に、地上では/何百年も/経っていたのでした。" />
+            <RubyRun text="浦島太郎が/竜宮城(りゅうぐうじょう)で/楽(たの)しい毎日(まいにち)を/過(す)ごしている間(あいだ)に、地上(ちじょう)では/何百年(なにひゃくねん)も/経(た)っていたのでした。" />
+          </Text>
+          <Vocabulary sequenceId="11" lang="ja">
+            <Term idx="0:9" text="浦島太郎が竜宮城で" rubyText="楽(たの)しい" meaning="fun, enjoyable" />
+            <Term idx="35:3" text="楽しい" rubyText="楽(たの)しい" meaning="fun, enjoyable" />
+            <Term idx="38:2" text="毎日" rubyText="毎日(まいにち)" meaning="every day" />
+            <Term idx="41:4" text="過(す)ごす/過(す)ごして" rubyText="過(す)す" meaning="pass, spend, idle away, to spend time" />
+            <Term idx="47:1" text="間" rubyText="間(あ)いだ" meaning="1. (of place) between, amoung 2. (of time) for, while during, 3. (of relations) between, among" />
+            <Term idx="50:2" text="地上" rubyText="地上(ちじょう)" meaning="above ground" />
+            <Term idx="54:4" text="何百年も" rubyText="何百年(なにひゃくねん)も" meaning="hundreds of years" />
+            <Term idx="58:3" text="経つ" rubyText="経(た)つ" meaning="to pass" explanation="何百年も経っていたのでした。Hundreds of years have passed." />
+            <Term idx="91:3" text="いる" rubyText="居(い)る" meaning="to be, stay; to keep, be doing" />
+            <Term idx="91:3" text="の" rubyText="" meaning="Nominaizer which is used when the nominalized sentence expresses a directly perceptible even." />
+          </Vocabulary>
+        </Content>
+      </Paragraph>
+    </ParagraphTuple>
+  </Story>
+</Stories>

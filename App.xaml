@@ -1,0 +1,44 @@
+﻿<Application
+    x:Class="UwpSample.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:converters="using:Microsoft.Toolkit.Uwp.UI.Converters"
+    xmlns:localConverters="using:UwpSample.Converters.ValueConverters"
+    xmlns:local="using:UwpSample">
+
+    <Application.Resources>
+        <!-- Application-specific resources -->
+        <ResourceDictionary>
+            <!--Resource dictionaries-->
+            <ResourceDictionary.MergedDictionaries>
+                <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls"/>
+                <ResourceDictionary Source="/Styles/Styles.xaml"/>
+                <!--<ResourceDictionary Source="/Styles/Custom/StoryStyles.xaml"/>-->
+                <!--<ResourceDictionary Source="ms-appx:///Styles/Themes.xaml" />
+                <ResourceDictionary Source="ms-appx:///Styles/Generic.xaml" />-->
+            </ResourceDictionary.MergedDictionaries>
+
+            <!--  Toolkit Converters  -->
+            <converters:BoolNegationConverter x:Key="BoolNegationConverter" />
+
+            <converters:EmptyStringToObjectConverter x:Key="EmptyStringToObject"
+                                                     EmptyValue="Collapsed"
+                                                     NotEmptyValue="Visible" />
+            <!-- Paper Converters -->
+            <!--<localConverters:BooleanNegationConverter x:Key="BooleanNegationConverter"/>
+            <localConverters:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+            <localConverters:InverseBooleanConverter x:Key="InverseBooleanConverter"/>
+            <localConverters:BooleanToVisibilityConverter x:Key="BooleanToInternetAccessLableConverter"/>
+            <localConverters:PositionDisplayConverter x:Key="PositionDisplayConverter"/>
+            <localConverters:DurationDisplayConverter x:Key="DurationDisplayConverter"/>
+            <localConverters:DoubleTappedArgsConverter x:Key="DoubleTappedArgsConverter"/>
+            <localConverters:DoubleTappedArgsConverter x:Key="TappedArgsConverter"/>
+            <localConverters:MediaElementArgsConverter x:Name="MediaElementArgsConverter" />
+            <localConverters:ScrollViewerArgsConverter x:Key="ScrollViewerArgsConverter"/>
+            <localConverters:RoutedEventArgsConverter x:Key="RoutedEventArgsConverter"/>-->
+            
+        </ResourceDictionary>
+    </Application.Resources>
+
+</Application>

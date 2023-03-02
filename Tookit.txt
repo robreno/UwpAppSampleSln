@@ -1,0 +1,39 @@
+﻿The text associated with this error code could not be found.
+
+Cannot find a Resource with the Name/Key TabViewButtonBackground [Line: 27 Position: 44]
+
+https://vijirajkumar.blogspot.com/2020/08/uwp-navigationview-cannot-find-resource.html
+
+Add: 
+
+<Application>
+    <Application.Resources>
+        <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
+    </Application.Resources>
+</Application>
+
+To App.xaml to fix above.
+
+Install-Package Microsoft.Extensions.DependencyInjection -Version 3.1.9
+
+Install-Package Microsoft.Toolkit -Version 7.0.0-preview5
+
+Install-Package Microsoft.Toolkit.Mvvm -Version 7.0.0-preview5
+
+Install-Package Microsoft.Toolkit.Uwp.UI.Behaviors -Version 7.0.0-preview5
+
+Install-Package Microsoft.Toolkit.Uwp.UI.Controls -Version 7.0.0-preview5
+
+    Requires > Microsoft.UI.Xaml (>= 2.5.0) 
+
+Install-Package Microsoft.UI.Xaml -Version 2.5.0
+
+Install-Package Microsoft.Toolkit.Uwp.UI.Controls.Markdown -Version 7.0.0-preview5
+
+Microsoft.Toolkit.Uwp.UI.Extensions
+    Install-Package Microsoft.Toolkit.Uwp.UI -Version 7.0.0-preview5
+    Install-Package Microsoft.Toolkit.Uwp.UI.Animations -Version 7.0.0-preview5
+
+Install-Package Nito.AsyncEx.Coordination -Version 5.1.0
+
+Install-Package refit -Version 5.2.1

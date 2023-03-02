@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AfternoonGreeting.Text" xml:space="preserve">
+    <value>Good Afternoon</value>
+    <comment>Afternoon greeting</comment>
+  </data>
+  <data name="AfternoonGreeting.Width" xml:space="preserve">
+    <value>200</value>
+    <comment>Width of afternoon greeting</comment>
+  </data>
+  <data name="AppDisplayName" xml:space="preserve">
+    <value>Story App</value>
+    <comment>English app name</comment>
+  </data>
+  <data name="ButtonNewGreeting.Content" xml:space="preserve">
+    <value>New Greeting</value>
+    <comment>Button content</comment>
+  </data>
+  <data name="ContextMenuTooltip.Text" xml:space="preserve">
+    <value>Right Click for Context Menu</value>
+    <comment>Context menu tooltip</comment>
+  </data>
+  <data name="EveningGreeting.Text" xml:space="preserve">
+    <value>Good Evening</value>
+    <comment>Evening greeting</comment>
+  </data>
+  <data name="EveningGreeting.Width" xml:space="preserve">
+    <value>200</value>
+    <comment>Width of evening greeting</comment>
+  </data>
+  <data name="InformalGreeting.Text" xml:space="preserve">
+    <value>Hello</value>
+    <comment>Informal greeting</comment>
+  </data>
+  <data name="InformalGreeting.Width" xml:space="preserve">
+    <value>200</value>
+    <comment>Width informal greeting</comment>
+  </data>
+  <data name="MenuFlyoutItemCopy.Text" xml:space="preserve">
+    <value>Copy</value>
+    <comment>MenuFlyoutItem Copy Text</comment>
+  </data>
+  <data name="MenuFlyoutItemCopy.Width" xml:space="preserve">
+    <value>200</value>
+    <comment>Width MenuFlyoutItem Copy Text</comment>
+  </data>
+  <data name="MenuFlyoutItemCopyToolTip.Text" xml:space="preserve">
+    <value>Copy Selected Text</value>
+    <comment>Copy Tooltip text</comment>
+  </data>
+  <data name="MenuFlyoutItemCopyToolTip.Width" xml:space="preserve">
+    <value>200</value>
+    <comment>Width of MenuFlyoutItemCopyToolTip.Text</comment>
+  </data>
+  <data name="MenuFlyoutItemMore.Text" xml:space="preserve">
+    <value>More</value>
+    <comment>MenuFlyoutItem More Text</comment>
+  </data>
+  <data name="MenuFlyoutItemMore.Width" xml:space="preserve">
+    <value>200</value>
+    <comment>Width MenuFlyoutItem More Text</comment>
+  </data>
+  <data name="MenuFlyoutItemMoreTooltip.Text" xml:space="preserve">
+    <value>More Menu Items</value>
+    <comment>MenuFlyoutItem More Tooltip Text</comment>
+  </data>
+  <data name="MenuFlyoutItemMoreTooltip.Width" xml:space="preserve">
+    <value>200</value>
+    <comment>Width MenuFlyoutItemMoreTooltip.Text</comment>
+  </data>
+  <data name="MenuFlyoutItemPaste.Text" xml:space="preserve">
+    <value>Paste</value>
+    <comment>MenuFlyoutItemPaste Text</comment>
+  </data>
+  <data name="MenuFlyoutItemPaste.Width" xml:space="preserve">
+    <value>200</value>
+    <comment>Width MenuFlyoutItemPaste.Text</comment>
+  </data>
+  <data name="MenuFlyoutItemPasteToolTip.Text" xml:space="preserve">
+    <value>Paste Selected Text</value>
+    <comment>Past Tooltip Text</comment>
+  </data>
+  <data name="MenuFlyoutItemPasteToolTip.Width" xml:space="preserve">
+    <value>200</value>
+    <comment>Width MenuFlyoutItemPasteToolTip.Text</comment>
+  </data>
+  <data name="MenuFlyoutItemPauseAudio.Text" xml:space="preserve">
+    <value>Pause</value>
+    <comment>MenuFlyoutItemPauseAudio.Text</comment>
+  </data>
+  <data name="MenuFlyoutItemPauseAudio.Width" xml:space="preserve">
+    <value>200</value>
+    <comment>Width MenuFlyoutItemPauseAudio.Text</comment>
+  </data>
+  <data name="MenuFlyoutItemPauseAudioTooltip.Text" xml:space="preserve">
+    <value>Pause Paragraph Audio</value>
+    <comment>Width MenuFlyoutItemPauseAudioTooltip.Text</comment>
+  </data>
+  <data name="MenuFlyoutItemPauseAudioTooltip.Width" xml:space="preserve">
+    <value>200</value>
+    <comment>MenuFlyoutItemPauseAudioTooltip.Text</comment>
+  </data>
+  <data name="MenuFlyoutItemPauseMarker.Text" xml:space="preserve">
+    <value>Pause Marker</value>
+    <comment>MenuFlyoutItemPauseMarker.Text</comment>
+  </data>
+  <data name="MenuFlyoutItemPauseMarker.Width" xml:space="preserve">
+    <value>200</value>
+    <comment>Width MenuFlyoutItemPauseMarker.Text</comment>
+  </data>
+  <data name="MenuFlyoutItemPauseMarkerTooltip.Text" xml:space="preserve">
+    <value>View Pause Marker Text</value>
+    <comment>MenuFlyoutItemPauseMarkerTooltip.Text</comment>
+  </data>
+  <data name="MenuFlyoutItemPauseMarkerTooltip.Width" xml:space="preserve">
+    <value>200</value>
+    <comment>Width MenuFlyoutItemPauseMarkerTooltip.Text</comment>
+  </data>
+  <data name="MenuFlyoutItemPlayAudio.Text" xml:space="preserve">
+    <value>Play</value>
+    <comment>MenuFlyoutItem Play Audio Text</comment>
+  </data>
+  <data name="MenuFlyoutItemPlayAudio.Width" xml:space="preserve">
+    <value>200</value>
+    <comment>Width MenuFlyoutItemPlayAudio.Text</comment>
+  </data>
+  <data name="MenuFlyoutItemPlayAudioTooltip.Text" xml:space="preserve">
+    <value>Play Paragraph Audio</value>
+    <comment>MenuFlyoutItemPlayAudioTooltip.Text</comment>
+  </data>
+  <data name="MenuFlyoutItemPlayAudioTooltip.Width" xml:space="preserve">
+    <value>200</value>
+    <comment>Width MenuFlyoutItemPlayAudioTooltip.Text</comment>
+  </data>
+  <data name="MenuFlyoutItemRegular.Text" xml:space="preserve">
+    <value>Regular</value>
+    <comment>MenuFlyoutItemRegular.Text</comment>
+  </data>
+  <data name="MenuFlyoutItemRegular.Width" xml:space="preserve">
+    <value>200</value>
+    <comment>Width MenuFlyoutItemRegular.Text</comment>
+  </data>
+  <data name="MenuFlyoutItemRegularTooltip.Text" xml:space="preserve">
+    <value>View Regular Text</value>
+    <comment>MenuFlyoutItemRegularTooltip.Text</comment>
+  </data>
+  <data name="MenuFlyoutItemRegularTooltip.Width" xml:space="preserve">
+    <value>200</value>
+    <comment>Width MenuFlyoutItemRegularTooltip.Text</comment>
+  </data>
+  <data name="MenuFlyoutItemRuby.Text" xml:space="preserve">
+    <value>Furigana</value>
+    <comment>MenuFlyoutItemRubyRun.Text</comment>
+  </data>
+  <data name="MenuFlyoutItemRuby.Width" xml:space="preserve">
+    <value>200</value>
+    <comment>Width MenuFlyoutItemRubyRun.Text</comment>
+  </data>
+  <data name="MenuFlyoutItemRubyTooltip.Text" xml:space="preserve">
+    <value>View Hiragana (Ruby) Text</value>
+    <comment>MenuFlyoutItemRubyTooltip.Text</comment>
+  </data>
+  <data name="MenuFlyoutItemRubyTooltip.Width" xml:space="preserve">
+    <value>200</value>
+    <comment>Width MenuFlyoutItemRubyTooltip.Text</comment>
+  </data>
+  <data name="MenuFlyoutItemSelectAll.Text" xml:space="preserve">
+    <value>Select All</value>
+    <comment>MenuFlyoutItem SelectAll Text</comment>
+  </data>
+  <data name="MenuFlyoutItemSelectAll.Width" xml:space="preserve">
+    <value>200</value>
+    <comment>Width MenuFlyoutItemSelectAll.Text</comment>
+  </data>
+  <data name="MenuFlyoutItemSelectAllToolTip.Text" xml:space="preserve">
+    <value>Select All Text</value>
+    <comment>MenuFlyoutItemSelectAll ToolTip Text</comment>
+  </data>
+  <data name="MenuFlyoutItemSelectAllToolTip.Width" xml:space="preserve">
+    <value>200</value>
+    <comment>Width MenuFlyoutItemSelectAllToolTip.Text</comment>
+  </data>
+  <data name="MenuFlyoutItemStopAudio.Text" xml:space="preserve">
+    <value>Stop</value>
+    <comment>MenuFlyoutItemStopAudio.Text</comment>
+  </data>
+  <data name="MenuFlyoutItemStopAudio.Width" xml:space="preserve">
+    <value>200</value>
+    <comment>Width MenuFlyoutItemStopAudio.Text</comment>
+  </data>
+  <data name="MenuFlyoutItemStopAudioTooltip.Text" xml:space="preserve">
+    <value>Stop Paragraph Audio</value>
+    <comment>MenuFlyoutItemStopAudioTooltip.Text</comment>
+  </data>
+  <data name="MenuFlyoutItemStopAudioTooltip.Width" xml:space="preserve">
+    <value>200</value>
+    <comment>Width MenuFlyoutItemStopAudioTooltip.Text</comment>
+  </data>
+  <data name="MenuFlyoutItemVocab.Text" xml:space="preserve">
+    <value>Vocabulary</value>
+    <comment>MenuFlyoutItem Show Vocabulary Text</comment>
+  </data>
+  <data name="MenuFlyoutItemVocab.Width" xml:space="preserve">
+    <value>200</value>
+    <comment>Width MenuFlyoutItem Vocabulary Text</comment>
+  </data>
+  <data name="MenuFlyoutItemVocabTooltip.Text" xml:space="preserve">
+    <value>Show Vocabulary</value>
+    <comment>Vocab Tooltip Text</comment>
+  </data>
+  <data name="MenuFlyoutItemVocabTooltip.Width" xml:space="preserve">
+    <value>200</value>
+    <comment>Width MenuFlyoutItemVocabTooltip.Text</comment>
+  </data>
+  <data name="MorningGreeting.Text" xml:space="preserve">
+    <value>Good Morning</value>
+    <comment>Morning greeting　</comment>
+  </data>
+  <data name="MorningGreeting.Width" xml:space="preserve">
+    <value>200</value>
+    <comment>Width of morning greeting </comment>
+  </data>
+</root>

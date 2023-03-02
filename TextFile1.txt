@@ -1,0 +1,173 @@
+﻿
+https://xamlbrewer.wordpress.com/2020/11/16/a-lap-around-the-microsoft-mvvm-toolkit/
+
+https://github.com/windows-toolkit/WindowsCommunityToolkit
+
+https://github.com/windows-toolkit/MVVM-Samples/tree/master/docs/mvvm
+
+Primary Change Language:
+
+https://stackoverflow.com/questions/32715690/c-sharp-change-app-language-programmatically-uwp-realtime
+https://www.guruumeditation.net/dynamically-change-the-language-of-a-universal-app/
+
+ApplicationLanguages.PrimaryLanguageOverride = "fr";
+
+After you set the Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride and 
+before re-navigating to the current page, you must call these two functions:
+
+Windows.ApplicationModel.Resources.Core.ResourceContext.GetForCurrentView().Reset();
+Windows.ApplicationModel.Resources.Core.ResourceContext.GetForViewIndependentUse().Reset();
+
+Frame.Navigate(this.GetType());
+
+C:\Users\robre\.nuget\packages\microsoft.toolkit\
+C:\Users\robre\.nuget\packages\microsoft.toolkit.uwp\
+C:\Users\robre\.nuget\packages\microsoft.toolkit.mvvm\
+C:\Users\robre\.nuget\packages\microsoft.toolkit.uwp.ui.animations\
+C:\Users\robre\.nuget\packages\microsoft.toolkit.uwp.ui.controls\
+C:\Users\robre\.nuget\packages\microsoft.toolkit.uwp.ui.controls.markdown\
+C:\Users\robre\.nuget\packages\microsoft.ui.xaml\
+
+ <PackageReference Include="Microsoft.Extensions.DependencyInjection">
+      <Version>3.1.9</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+      <Version>6.2.10</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit">
+      <Version>7.0.0-build.486</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Mvvm">
+      <Version>7.0.0-build.486</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Uwp.UI.Controls">
+      <Version>7.0.0-build.486</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Uwp.UI.Controls.Markdown">
+      <Version>7.0.0-build.486</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.UI.Xaml">
+      <Version>2.4.2</Version>
+    </PackageReference>
+    <PackageReference Include="Nito.AsyncEx.Coordination">
+      <Version>5.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="refit">
+      <Version>5.2.1</Version>
+    </PackageReference>
+  </ItemGroup>
+
+
+The text associated with this error code could not be found.
+
+Cannot find a Resource with the Name/Key TabViewButtonBackground [Line: 27 Position: 44]
+
+https://vijirajkumar.blogspot.com/2020/08/uwp-navigationview-cannot-find-resource.html
+
+Add: 
+
+<Application>
+    <Application.Resources>
+        <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
+    </Application.Resources>
+</Application>
+
+To App.xaml to fix above.
+
+Install-Package Microsoft.Extensions.DependencyInjection -Version 3.1.9
+
+Install-Package Microsoft.Toolkit -Version 7.0.0-preview5
+
+Install-Package Microsoft.Toolkit.Mvvm -Version 7.0.0-preview5
+
+Install-Package Microsoft.Toolkit.Uwp.UI.Behaviors -Version 7.0.0-preview5
+
+Install-Package Microsoft.Toolkit.Uwp.UI.Controls -Version 7.0.0-preview5
+
+    Requires > Microsoft.UI.Xaml (>= 2.5.0) 
+
+Install-Package Microsoft.UI.Xaml -Version 2.5.0
+
+Install-Package Microsoft.Toolkit.Uwp.UI.Controls.Markdown -Version 7.0.0-preview5
+
+Microsoft.Toolkit.Uwp.UI.Extensions
+    Install-Package Microsoft.Toolkit.Uwp.UI -Version 7.0.0-preview5
+    Install-Package Microsoft.Toolkit.Uwp.UI.Animations -Version 7.0.0-preview5
+
+Install-Package Nito.AsyncEx.Coordination -Version 5.1.0
+
+Install-Package refit -Version 5.2.1
+
+
+<ItemGroup>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+      <Version>6.2.10</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit">
+      <Version>7.0.0-preview5</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Mvvm">
+      <Version>7.0.0-preview5</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Uwp.UI.Controls">
+      <Version>7.0.0-preview5</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Uwp.UI.Controls.Markdown">
+      <Version>7.0.0-preview5</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.UI.Xaml">
+      <Version>2.4.2</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>12.0.3</Version>
+    </PackageReference>
+ </ItemGroup>
+
+ C:\Users\robre\.nuget\packages\
+
+ <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection">
+      <Version>3.1.9</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+      <Version>6.2.10</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit">
+      <Version>7.0.0-preview5</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Mvvm">
+      <Version>7.0.0-preview5</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Uwp.UI.Behaviors">
+      <Version>7.0.0-preview5</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Uwp.UI.Controls">
+      <Version>7.0.0-preview5</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Uwp.UI.Controls.Markdown">
+      <Version>7.0.0-preview5</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.UI.Xaml">
+      <Version>2.4.2</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>12.0.3</Version>
+    </PackageReference>
+  </ItemGroup>
+
+https://social.msdn.microsoft.com/Forums/en-US/a1504d49-1f1a-4b42-a9e4-58392421f098/how-bind-viewmodel-command-to-richtextblocks-doubletapped-event-using-interactivity
+http://geoffwebbercross.blogspot.com/2011/09/richtextblock-xaml-bindable-rich-text.html
+https://stackoverflow.com/questions/13483838/how-do-i-bind-rich-text-flowdocument-from-my-view-model-to-a-richtextblock
+
+<interactivity:Interaction.Behaviors>
+<core:EventTriggerBehavior EventName="DoubleTapped">
+    <core:InvokeCommandAction 
+        Command="{Binding DoubleTappedRequest}"
+        InputConverter="{StaticResource DoubleTappedArgsConverter}"
+        InputConverterLanguage="en-US"
+        InputConverterParameter="{Binding ElementName=paperName, Path=Text}"/>
+</core:EventTriggerBehavior>
+</interactivity:Interaction.Behaviors>
+
+
+Cannot add instance of type 'UwpSample.Views.RichTextBox' to a collection of type 'Microsoft.Xaml.Interactivity.ActionCollection'. 

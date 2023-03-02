@@ -1,0 +1,341 @@
+﻿<UserControl  
+    x:Class="UwpSample.Controls.JaUrashimaTaroBladeItem"
+    x:Name="JaUrashimaTaroBI"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:local="using:UwpSample.Controls"
+    xmlns:converters="using:Microsoft.Toolkit.Uwp.UI.Converters"
+    xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
+    xmlns:core="using:Microsoft.Xaml.Interactions.Core"
+    xmlns:cv="using:UwpSample.Converters.ValueConverters"
+    xmlns:ap="using:UwpSample.AttachedProperties" 
+    xmlns:vm="using:UwpSample.ViewModels" 
+    mc:Ignorable="d"
+    d:DesignHeight="1220"
+    d:DesignWidth="950"
+    d:DataContext="{d:DesignInstance Type=vm:ViewModelBase}"
+    HorizontalAlignment="Stretch"
+    VerticalAlignment="Stretch"
+    Language="ja"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    RequestedTheme="Dark">
+
+    <UserControl.Resources>
+
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Styles/Custom/StoryStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <converters:TaskResultConverter x:Key="TaskResultConverter"/>
+            <cv:RequestStoryConverter x:Key="RequestStoryConverter"/>
+            <cv:DoubleTappedArgsConverter x:Key="DoubleTappedArgsConverter"/>
+            <x:String x:Key="storyId">1</x:String>
+            <x:String x:Key="storyLanguage">ja</x:String>
+            <x:String x:Key="storyName">UrashimaTaro</x:String>
+            <x:String x:Key="storyTitle">浦島太郎</x:String>
+            <x:String x:Key="storyRubyTitle">浦島太郎 (うらしまたろう)</x:String>
+            <x:String x:Key="localAudioUri">ms-appx:///Assets/StoryData/Audio/Urashima.mp3</x:String>
+
+        </ResourceDictionary>
+
+    </UserControl.Resources>
+
+    <UserControl.DataContext>
+        <vm:UrashimaTaroViewModel x:Name="viewModel"/>
+    </UserControl.DataContext>
+
+    <!--<interactivity:Interaction.Behaviors>
+        <core:EventTriggerBehavior EventName="Loaded">
+            <core:InvokeCommandAction Command="{Binding LoadStoryCommand}"
+                                      InputConverter="{StaticResource RequestStoryConverter}"
+                                      InputConverterLanguage="ja"
+                                      InputConverterParameter="{StaticResource storyId}" />
+        </core:EventTriggerBehavior>
+    </interactivity:Interaction.Behaviors>-->
+
+    <Grid x:Name="contentGrid">
+
+        <MediaElement x:Name="mediaElement"
+                    AutoPlay="False"
+                    Visibility="Collapsed"
+                    AreTransportControlsEnabled="True"
+                    Tag="{StaticResource storyName}"
+                    Source="{StaticResource localAudioUri}">
+
+        </MediaElement>
+        
+        <controls:BladeItem x:Name="BladeItem"
+                        Language="ja"
+                        Margin="10,10,10,10"
+                        Style="{StaticResource BladeItemStyle}"
+                        Header="浦島太郎 (うらしまたろう)"
+                        ap:Audio.SourceUri="ms-appx:///Assets/StoryData/Audio/Urashima.mp3"
+                        TitleBarVisibility="Visible"
+                        IsDoubleTapEnabled="True">
+
+
+            <ScrollViewer x:Name="ScrollViewer" 
+                      Language="ja"
+                      VerticalScrollBarVisibility="Visible"
+                      IsScrollInertiaEnabled="True"
+                      IsDoubleTapEnabled="True">
+
+                <StackPanel x:Name="ContentStackPanel" 
+                        Language="ja"
+                        IsDoubleTapEnabled="True"
+                        IsHitTestVisible="True"
+                        IsTapEnabled="True"
+                        Style="{StaticResource StackPanelStyle}">
+
+
+                    <RichTextBlock x:Name="RichTextBlock_00" Language="ja" 
+                                   Style="{StaticResource JaTitleText}"
+                                   IsTextSelectionEnabled="True"
+                                   IsRightTapEnabled="True"
+                                   IsDoubleTapEnabled="True"
+                                   ToolTipService.Placement="Top" 
+                                   ap:Audio.TimeSpan="0:0:0.0_0:0:2.0"
+                                   ap:PauseRun.IsPause="False"
+                                   ap:PauseRun.IsVisible="False"
+                                   ap:PauseRun.PauseMark="/"
+                                   ap:RubyRun.IsRuby="True" 
+                                   ap:RubyRun.IsVisible="False"
+                                   ap:RubyRun.RubyText="浦島太郎(うらしまたろう)"
+                                   ap:SecondLanguage.Culture="en-US"
+                                   ap:SecondLanguage.Text="Urashima Taro">
+                        <Paragraph x:Name="Paragraph_00">
+                            <Run x:Name="Run_00" Text="浦島太郎" />
+                        </Paragraph>
+                    </RichTextBlock>
+                    <RichTextBlock x:Name="RichTextBlock_01" Language="ja" 
+                                   Style="{StaticResource JaRegularText}"
+                                   IsTextSelectionEnabled="True"
+                                   IsRightTapEnabled="True"
+                                   IsDoubleTapEnabled="True"
+                                   ToolTipService.Placement="Top" 
+                                   ap:Audio.TimeSpan="0:0:3.0.0_0:0:32.0"
+                                   ap:PauseRun.IsPause="True"
+                                   ap:PauseRun.IsVisible="False"
+                                   ap:PauseRun.PauseMark="/"
+                                   ap:PauseRun.PauseText="昔々、ある/海辺の村に、浦島太郎という/漁師が/住んでいました。浦島太郎は/心のやさしい若者で、毎日/海へ出かけて/魚をつって/年老いたお父さんとお母さんを/養っていました。"
+                                   ap:RubyRun.IsRuby="True" 
+                                   ap:RubyRun.IsVisible="False"
+                                   ap:RubyRun.RubyText="昔々(むかしむかし)、ある/海辺(うみべ)の村(むら)に、浦島太郎(うらしまたろう)という/漁師(りょうし)が/住(す)んでいました。浦島太郎は/心(こころ)のやさしい若者(わかもの)で、毎日(まいにち)/海(うみ)へ出(で)かけて/魚(さかな)をつって/年老(としお)いたお父(とう)さんとお母(かあ)さんを/養(やしな)っていました。"
+                                   ap:SecondLanguage.Culture="en-US"
+                                   ap:SecondLanguage.Text="Once upon a time in a seaside village, there lived a fisherman named Urashima Taro. Urashima Taro was a young man with a kind heart; he went out to sea every day to go fishing to support his elderly father and mother.">
+                        <Paragraph x:Name="Paragrapha_01">
+                            <Run x:Name="Run_01" Text="昔々、ある海辺の村に、浦島太郎という漁師が住んでいました。浦島太郎は心のやさしい若者で、毎日海へ出かけて魚をつって年老いたお父さんとお母さんを養っていました。" />
+                        </Paragraph>
+                    </RichTextBlock>
+                    <RichTextBlock x:Name="RichTextBlock_02" Language="ja" 
+                                   Style="{StaticResource JaRegularText}"
+                                   IsTextSelectionEnabled="True"
+                                   IsDoubleTapEnabled="True"
+                                   ToolTipService.Placement="Top" 
+                                   ToolTipService.ToolTip="Paragraph002"
+                                   ap:Audio.TimeSpan="0:0:33.0_0:1:42.0"
+                                   ap:PauseRun.IsPause="True"
+                                   ap:PauseRun.IsVisible="False"
+                                   ap:PauseRun.PauseMark="/"
+                                   ap:PauseRun.PauseText="ある日、浦島太郎は/海から/帰る途中、浜で/子供たちが集まって/騒いでいるのを/見ました。のぞいてみると、小さい亀の子を/一匹つかまえて、皆で/棒でつっついて/いじめていました。その亀の子を/かわいそうだと思った/浦島太郎は、「生き物を/いじめては/いけないぞ。」と、子供たちに/言って、亀の子を/助けてやりました。太郎が/亀の子を/手にのせて/海の水の中に/戻してやると、亀の子は喜んで/甲羅から/首や手足を/出して、すいすいと/泳ぎ始めました。そして、海の底の方へ/戻って/行きました。"
+                                   ap:RubyRun.IsRuby="True" 
+                                   ap:RubyRun.IsVisible="False"
+                                   ap:RubyRun.RubyText="ある日(ひ)、浦島太郎は/海から/帰(かえ)る途中(とちゅう)、浜(はま)で/子供(こども)たちが集(あつ)まって/騒(さわ)いでいるのを/見(み)ました。のぞいてみると、小(ちい)さい亀(かめ)の子(こ)を/一匹(いっぴき)つかまえて、皆(みな)で/棒(ぼう)でつっついて/いじめていました。その亀の子を/かわいそうだと思(おも)った/浦島太郎は、「生(い)き物(もの)を/いじめては/いけないぞ。」と、子供(こども)たちに/言(い)って、亀の子を/助(たす)けてやりました。太郎が/亀の子を/手(て)にのせて/海の水(みず)の中(なか)に/戻(もど)してやると、亀の子は喜(よろこ)んで/甲羅(こうら)から/首(くび)や手足(てあし)を/出(だ)して、すいすいと/泳(およ)ぎ始(はじ)めました。そして、海の底(そこ)の方(ほう)へ/戻(もど)って行(い)きました。"
+                                   ap:SecondLanguage.Culture="en-US"
+                                   ap:SecondLanguage.Text="One day, on his way back from the sea, Urashima Taro saw some children gathered on the beach, making a lot of noise. He saw that they had caught a small baby turtle, and that they were all tormenting it by poking it with a stick. He felt sorry for the poor baby turtle. He said to the children, &quot;You must not torment living creatures!&quot; and saved the baby turtle. He took it in his hand and returned it to the water. The turtle was happy, and it popped its head and legs out of its shell and started to swim with no trouble at all, returning to the bottom of the sea.">
+                        <Paragraph x:Name="Paragraph_02">
+                            <Run x:Name="Run_02" Text="ある日、浦島太郎は海から帰る途中、浜で子供たちが集まって騒いでいるのを見ました。のぞいてみると、小さい亀の子を一匹つかまえて、皆で棒でつっついていじめていました。その亀の子をかわいそうだと思った浦島太郎は、「生き物をいじめてはいけないぞ。」と、子供たちに言って、亀の子を助けてやりました。太郎が亀の子を手にのせて海の水の中に戻してやると、亀の子は喜んで甲羅から首や手足を出して、すいすいと泳ぎ始めました。そして、海の底の方へ戻って行きました。" />
+                        </Paragraph>
+                    </RichTextBlock>
+                    <RichTextBlock x:Name="RichTextBlock_03" Language="ja" 
+                                   Style="{StaticResource JaRegularText}"
+                                   IsTextSelectionEnabled="True"
+                                   IsDoubleTapEnabled="True"
+                                   ToolTipService.Placement="Top" 
+                                   ToolTipService.ToolTip="Paragraph03"
+                                   ap:Audio.TimeSpan="0:1:43.0_0:2:28.0"
+                                   ap:PauseRun.IsPause="True"
+                                   ap:PauseRun.IsVisible="False"
+                                   ap:PauseRun.PauseMark="/"
+                                   ap:PauseRun.PauseText="それから/二、三年たった/ある日のことです。浦島太郎は/また舟にのって/海で/魚をつっていました。すると、うしろのほうで、「浦島さん、浦島さん！」と、呼ぶ声が/しました。"
+                                   ap:RubyRun.IsRuby="True" 
+                                   ap:RubyRun.IsVisible="False"
+                                   ap:RubyRun.RubyText="それから/二(に)、三(さん)年(ねん)たった/ある日(ひ)のことです。浦島太郎は/また舟(ふね)にのって/海(うみ)で/魚(さかな)をつっていました。すると、うしろのほうで、「浦島さん、浦島さん！」と、呼(よ)ぶ声(こえ)がしました。"
+                                   ap:SecondLanguage.Culture="en-US"
+                                   ap:SecondLanguage.Text="One day, two or three years later, Urashima Taro was once again out at the sea fishing when he heard a voice call out from behind him, &quot;Mr. Urashima! Mr. Urashima!&quot; When he looked behind him, a big turtle was approaching the boat.">
+                        <Paragraph x:Name="Paragraph_03">
+                            <Run x:Name="Run_03" Text="それから二、三年たったある日のことです。浦島太郎はまた舟にのって海で魚をつっていました。すると、うしろのほうで、「浦島さん、浦島さん！」と、呼ぶ声がしました。" />
+                        </Paragraph>
+                    </RichTextBlock>
+                    <RichTextBlock x:Name="RichTextBlock_04" Language="ja" 
+                                   Style="{StaticResource JaRegularText}"
+                                   IsTextSelectionEnabled="True"
+                                   IsDoubleTapEnabled="True"
+                                   ToolTipService.Placement="Top" 
+                                   ToolTipService.ToolTip="Paragraph04"
+                                   ap:Audio.TimeSpan="0_0:2:29.0_0:3:40.0"
+                                   ap:PauseRun.IsPause="True"
+                                   ap:PauseRun.IsVisible="False"
+                                   ap:PauseRun.PauseMark="/"
+                                   ap:PauseRun.PauseText="ふりかえって、一匹の大きい亀が/舟のそばに/きていました。「わたくしは、前に/助けていただいた/亀でございます。お礼に/海の底にある/竜宮城に/ご案内いたしましょう。」と、亀が/言いました。亀は/背中に/浦島太郎をのせて/泳ぎ出しました。青い海中を/しばらく/潜っていくと、急に/まわりが/明るくなりました。あたり一面は/珊瑚礁になり、きれいな魚が/たくさん泳いでいました。そして、また/しばらく行くと、向こうに/立派な門が/見えました。魚たちは/浦島太郎を/竜宮城の中に/案内しました。"
+                                   ap:RubyRun.IsRuby="True" 
+                                   ap:RubyRun.IsVisible="False"
+                                   ap:RubyRun.RubyText="ふりかえって、一匹(いっぴき)の大きい亀が/舟のそばに/きていました。「わたくしは、前(まえ)に/助(たす)けていただいた/亀でございます。お礼に/海の底(そこ)にある/竜宮城に/ご案内(あんない)いたしましょう。」と、亀が/言(い)いました。亀は/背中(せなか)に/浦島太郎をのせて/泳(およ)ぎ出(だ)しました。青(あお)い海中(かいちゅう)を/しばらく/潜(もぐ)っていくと、急(きゅう)に/まわりが/明(あか)るくなりました。あたり一面(いちめん)は/珊瑚礁(さんごしょう)になり、きれいな魚(さかな)が/たくさん泳(およ)いでいました。そして、また/しばらく行(い)くと、向(む)こうに/立派(りっぱ)な門(もん)が/見(み)えました。魚(さかな)たちは/浦島太郎を/竜宮城(りゅうぐうじょう)の中(なか)に/案内(あんない)しました。"
+                                   ap:SecondLanguage.Culture="en-US"
+                                   ap:SecondLanguage.Text="When he looked behind him, a big turtle was approaching the boat. &amp;Sir, I am the turtle that you saved. As a sign of my gratitude, I will guide you to the Dragon Palace at the bottom of the sea,&amp; the turtle said. The turtle put Urashima Taro onto its back and started swimming. When it dived under the blue sea a short time later, their surroundings were suddenly illuminated. They were surrounded by a coral reef, and schools of beautiful fish were swimming by. After they had been going for a while, an elegant gateway came into view in front of them. A fish led Urashima Taro into the Dragon Palace.">
+                        <Paragraph x:Name="Paragraph_04">
+                            <Run x:Name="Run04" Text="ふりかえって、一匹の大きい亀が舟のそばにきていました。「わたくしは、前に助けていただいた亀でございます。お礼に海の底にある竜宮城にご案内いたしましょう。」と、亀が言いました。亀は背中に浦島太郎をのせて泳ぎ出しました。青い海中をしばらく潜っていくと、急にまわりが明るくなりました。あたり一面は珊瑚礁になり、きれいな魚がたくさん泳いでいました。そして、またしばらく行くと、向こうに立派な門が見えました。魚たちは浦島太郎を竜宮城の中に案内しました。" />
+                        </Paragraph>
+                    </RichTextBlock>
+                    <RichTextBlock x:Name="RichTextBlock_05" Language="ja" 
+                                   Style="{StaticResource JaRegularText}"
+                                   IsTextSelectionEnabled="True"
+                                   IsDoubleTapEnabled="True"
+                                   ToolTipService.Placement="Top" 
+                                   ToolTipService.ToolTip="Paragraph05"
+                                   ap:Audio.TimeSpan="0:3:41.0_0:4:10.0"
+                                   ap:PauseRun.IsPause="True"
+                                   ap:PauseRun.IsVisible="False"
+                                   ap:PauseRun.PauseMark="/"
+                                   ap:PauseRun.PauseText="竜宮城の中には/美しいおとひめさまがいて、「ようこそ/竜宮城へ/いらっしゃいました。先日は/亀を助けてくださって/ありがとうございました。どうぞ/ゆっくり/遊んでいってください。」と、やさしい声で/言いました。"
+                                   ap:RubyRun.IsRuby="True" 
+                                   ap:RubyRun.IsVisible="False"
+                                   ap:RubyRun.RubyText="竜宮城(りゅうぐうじょう)の中(なか)には/美(うつく)しいおとひめさまがいて、「ようこそ/竜宮城へ/いらっしゃいました。先日(せんじつ)は/亀を助(たす)けてくださって/ありがとうございました。どうぞ/ゆっくり遊(あそ)んでいってください。」と、やさしい声(こえ)で言(い)いました。"
+                                   ap:SecondLanguage.Culture="en-US"
+                                   ap:SecondLanguage.Text="Inside the Dragon Palace, there was a beautiful princess. &amp;Welcome to the Dragon Palace. Thank you for saving the turtle the other day. Please, relax and enjoy yourself,&amp; she said with a kind voice.">
+                        <Paragraph x:Name="JaParagraph_05">
+                            <Run x:Name="JaRun_05" Text="竜宮城の中には美しいおとひめさまがいて、「ようこそ竜宮城へいらっしゃいました。先日は亀を助けてくださってありがとうございました。どうぞゆっくり遊んでいってください。」と、やさしい声で言いました。" />
+                        </Paragraph>
+                    </RichTextBlock>
+                    <RichTextBlock x:Name="RichTextBlock_06" Language="ja" 
+                                   Style="{StaticResource JaRegularText}"
+                                   IsTextSelectionEnabled="True"
+                                   IsDoubleTapEnabled="True"
+                                   ToolTipService.Placement="Top" 
+                                   ToolTipService.ToolTip="Paragraph06"
+                                   ap:Audio.TimeSpan="0:4:11.0_0:4:36.0"
+                                   ap:PauseRun.IsPause="True"
+                                   ap:PauseRun.IsVisible="False"
+                                   ap:PauseRun.PauseMark="/"
+                                   ap:PauseRun.PauseText="それから、浦島太郎は/竜宮城で/きれいな魚たちの踊りを/みたり、お酒を/飲んだり、すばらしいご馳走を/食べたり、乙姫様と/楽しく/お話し/したりして、夢のような/毎日を/過ごしました。"
+                                   ap:RubyRun.IsRuby="True" 
+                                   ap:RubyRun.IsVisible="False"
+                                   ap:RubyRun.RubyText="それから、浦島太郎は/竜宮城で/きれいな魚(さかな)たちの踊(おど)りを/みたり、お酒(さけ)を/飲(の)んだり、すばらしいご馳走(ちそう)を/食(た)べたり、乙姫様(おとひめさま)と/楽(たの)しく/お話(はな)ししたりして、夢(ゆめ)のような/毎日(まいにち)を/過(す)ごしました。"
+                                   ap:SecondLanguage.Culture="en-US"
+                                   ap:SecondLanguage.Text="After that, Urashima Taro watched the beautiful fish dance, drank sake, enjoyed wondrous feasts, merrily chatted with the princess, and lived every day like it was dream in the Palace.">
+                        <Paragraph x:Name="Paragraph_06">
+                            <Run x:Name="Run_06" Text="それから、浦島太郎は竜宮城できれいな魚たちの踊りをみたり、お酒を飲んだり、すばらしいご馳走を食べたり、乙姫様と楽しくお話ししたりして、夢のような毎日を過ごしました。" />
+                        </Paragraph>
+                    </RichTextBlock>
+                    <RichTextBlock x:Name="RichTextBlock_07" Language="ja" 
+                                   Style="{StaticResource JaRegularText}"
+                                   IsTextSelectionEnabled="True"
+                                   IsDoubleTapEnabled="True"
+                                   ToolTipService.Placement="Top" 
+                                   ToolTipService.ToolTip="Paragraph07"
+                                   ap:Audio.TimeSpan="0:4:37.0_0:5:38.0"
+                                   ap:PauseRun.IsPause="True"
+                                   ap:PauseRun.IsVisible="False"
+                                   ap:PauseRun.PauseMark="/"
+                                   ap:PauseRun.PauseText="ところが、しばらくすると、浦島太郎は/村にいる/お父さんとお母さんのことが/心配になりました。そして、早く/うちに/帰りたいと/思いました。そのことを/乙姫様に言うと、乙姫様は/きれいな箱を/持って来て/こう言いました。「さびしくなりますが、おうちに/お帰りになりたいのは/当然です。これは/玉手箱です。これを/持って/気をつけて/お帰りになってください。しかし、決して/この箱を/開けないでくださいね 。」"
+                                   ap:RubyRun.IsRuby="True" 
+                                   ap:RubyRun.IsVisible="False"
+                                   ap:RubyRun.RubyText="ところが、しばらくすると、浦島太郎は/村(むら)にいる/お父さんとお母さんのことが/心配(しんぱい)になりました。そして、早(はや)く/うちに/帰(かえ)りたいと/思(おも)いました。そのことを/乙姫様(おとひめさま)に言(い)うと、乙姫様(おとひめさま)は/きれいな箱(ばこ)を/持(も)って来(き)て/こう言(い)いました。「さびしくなりますが、おうちに/お帰(かえ)りになりたいのは/当然(とうぜん)です。これは/玉手箱(たまてばこ)です。これを/持(も)って/気(き)をつけて/お帰(かえ)りになってください。しかし、決(けっ)して/この箱(はこ)を/開(あ)けないでくださいね。」"
+                                   ap:SecondLanguage.Culture="en-US"
+                                   ap:SecondLanguage.Text="However, after a time, Urashima Taro became worried about his mother and father back in the village and thought that he would like to return home soon. When he told this to the princess, she gave him a beautiful box to take with him, and said, &amp;I will miss you, but it is natural for you to want to return home. This is a tamatabako, a treasure box. Please take it with you and be careful returning home. But please, never open this box.&amp;">
+                        <Paragraph x:Name="Paragraph_07">
+                            <Run x:Name="Run_07" Text="ところが、しばらくすると、浦島太郎は村にいるお父さんとお母さんのことが心配になりました。そして、早くうちに帰りたいと思いました。そのことを乙姫様に言うと、乙姫様はきれいな箱を持って来てこう言いました。「さびしくなりますが、おうちにお帰りになりたいのは当然です。これは玉手箱です。これを持って気をつけてお帰りになってください。しかし、決してこの箱を開けないでくださいね 。」" />
+                        </Paragraph>
+                    </RichTextBlock>
+                    <RichTextBlock x:Name="RichTextBlock_08" Language="ja" 
+                                   Style="{StaticResource JaRegularText}"
+                                   IsTextSelectionEnabled="True"
+                                   IsDoubleTapEnabled="True"
+                                   ToolTipService.Placement="Top" 
+                                   ToolTipService.ToolTip="Paragraph08"
+                                   ap:Audio.TimeSpan="0:5:39_0:5:50.0"
+                                   ap:PauseRun.IsPause="True"
+                                   ap:PauseRun.IsVisible="False"
+                                   ap:PauseRun.PauseMark="/"
+                                   ap:PauseRun.PauseText="浦島太郎は/玉手箱を持って、亀の背中にのって、村へと/向かいました。"
+                                   ap:RubyRun.IsRuby="True" 
+                                   ap:RubyRun.IsVisible="False"
+                                   ap:RubyRun.RubyText="浦島太郎は/玉手箱(たまてばこ)を持(も)って、亀の背中(せなか)にのって、村(むら)へと/向(む)かいました。"
+                                   ap:SecondLanguage.Culture="en-US"
+                                   ap:SecondLanguage.Text="Urashima Taro took the treasure box, got onto the turtle's back and set off towards his village.">
+                        <Paragraph x:Name="Paragraph_08">
+                            <Run x:Name="Run_08" Text="浦島太郎は玉手箱を持って、亀の背中にのって、村へと向かいました。" />
+                        </Paragraph>
+                    </RichTextBlock>
+                    <RichTextBlock x:Name="RichTextBlock_09" Language="ja" 
+                                   TextAlignment="Left" TextIndent="20"
+                                   Style="{StaticResource JaRegularText}"
+                                   IsTextSelectionEnabled="True"
+                                   IsDoubleTapEnabled="True"
+                                   ToolTipService.Placement="Top" 
+                                   ToolTipService.ToolTip="Paragraph09"
+                                   ap:Audio.TimeSpan="0:5:51.0_0:6:30.0"
+                                   ap:PauseRun.IsPause="True"
+                                   ap:PauseRun.IsVisible="False"
+                                   ap:PauseRun.PauseMark="/"
+                                   ap:PauseRun.PauseText="ところが、海辺に着くと、あたりの様子は/すっかり/変わっていました。村の方に/歩いていくと/人がいましたが、どの人も/知らない人でした。村には/自分の家は/ありませんでした。お父さんもお母さんも/いくら呼んでも/見つかりません。浦島太郎は/すっかり/困ってしまいました。"
+                                   ap:RubyRun.IsRuby="True" 
+                                   ap:RubyRun.IsVisible="False"
+                                   ap:RubyRun.RubyText="ところが、海辺(うみべ)に着(つ)くと、あたりの様子(ようす)は/すっかり/変(か)わっていました。村(むら)の方(ほう)に/歩(ある)いていくと/人(ひと)がいましたが、どの人(ひと)も/知(し)らない人(ひと)でした。村(むら)には/自分(じぶん)の家(いえ)は/ありませんでした。お父さんもお母さんも/いくら呼(よ)んでも/見つかりません。浦島太郎は/すっかり/困(こま)ってしまいました。"
+                                   ap:SecondLanguage.Culture="en-US"
+                                   ap:SecondLanguage.Text="However, when he arrived at the shore, everything around him had completely changed. There were people there as he walked towards the village but he knew none of them. His own house in the village was gone. No matter how many times he called out to his mother and father, they couldn't be found. Urashima Taro was very shaken up.">
+                        <Paragraph x:Name="Paragraph_09">
+                            <Run x:Name="Run_09" Text="ところが、海辺に着くと、あたりの様子はすっかり変わっていました。村の方に歩いていくと人がいましたが、どの人も知らない人でした。村には自分の家はありませんでした。お父さんもお母さんもいくら呼んでも見つかりません。浦島太郎はすっかり困ってしまいました。" />
+                        </Paragraph>
+                    </RichTextBlock>
+                    <RichTextBlock x:Name="RichTextBlock_10" Language="ja" 
+                                   Style="{StaticResource JaRegularText}"
+                                   IsTextSelectionEnabled="True"
+                                   IsDoubleTapEnabled="True"
+                                   ToolTipService.ToolTip="Paragraph10"
+                                   ap:Audio.TimeSpan="0:6:31.0_0:7:03.0"
+                                   ap:PauseRun.IsPause="True"
+                                   ap:PauseRun.IsVisible="False"
+                                   ap:PauseRun.PauseMark="/"
+                                   ap:PauseRun.PauseText="その時、ふと/玉手箱が/目に入りました。そして、浦島太郎は/それを/そっと/開けてみました。すると、中から/白い煙が/出てきました。太郎が/だまって/その煙を/見ていると、若者だった浦島太郎は/たちまち/白い髭と髪の老人に/なってしまいました。"
+                                   ap:RubyRun.IsRuby="True" 
+                                   ap:RubyRun.IsVisible="False"
+                                   ap:RubyRun.RubyText="その時(とき)、ふと/玉手箱(たまてばこ)が/目(め)に入(はい)りました。そして、浦島太郎は/それを/そっと/開けてみました。すると、中(なか)から/白(しろ)い煙(けむり)が/出(で)てきました。太郎が/だまって/その煙(けむり)を/見(み)ていると、若者(わかもの)だった浦島太郎は/たちまち/白(しろ)い髭(ひげ)と髪(かみ)の老人(ろうじん)に/なってしまいました。"
+                                   ap:SecondLanguage.Culture="en-US"
+                                   ap:SecondLanguage.Text="At that moment, he suddenly caught sight of the tamatabako, and he gently tried to open it. When he did, white smoke came out from inside it. As he silently watched the smoke, in the blink of an eye the young Urashima Taro turned into an old man with white hair and white beard.">
+                        <Paragraph x:Name="Paragraph_10">
+                            <Run x:Name="Run_10" Text="その時、ふと玉手箱が目に入りました。そして、浦島太郎はそれをそっと開けてみました。すると、中から白い煙が出てきました。太郎がだまってその煙を見ていると、若者だった浦島太郎はたちまち白い髭と髪の老人になってしまいました。" />
+                        </Paragraph>
+                    </RichTextBlock>
+                    <RichTextBlock x:Name="RichTextBlock_11" Language="ja" 
+                                   Style="{StaticResource JaRegularText}"
+                                   IsTextSelectionEnabled="True"
+                                   IsDoubleTapEnabled="True"
+                                   ToolTipService.ToolTip="Paragraph11"
+                                   ap:Audio.TimeSpan="0:7:04.0_0:7:20.0"
+                                   ap:PauseRun.IsPause="True"
+                                   ap:PauseRun.IsVisible="False"
+                                   ap:PauseRun.PauseMark="/"
+                                   ap:PauseRun.PauseText="浦島太郎が/竜宮城で/楽しい毎日を/過ごしている間に、地上では/何百年も/経っていたのでした。"
+                                   ap:RubyRun.IsRuby="True" 
+                                   ap:RubyRun.IsVisible="False"
+                                   ap:RubyRun.RubyText="浦島太郎が/竜宮城(りゅうぐうじょう)で/楽(たの)しい毎日(まいにち)を/過(す)ごしている間(あいだ)に、地上(ちじょう)では/何百年(なにひゃくねん)も/経(た)っていたのでした。"
+                                   ap:SecondLanguage.Culture="en-US"
+                                   ap:SecondLanguage.Text="While he had been having fun every day in the Dragon Palace, hundreds of years had passed on land.">
+                        <Paragraph x:Name="Paragraph_11">
+                            <Run x:Name="Run_11" Text="浦島太郎が竜宮城で楽しい毎日を過ごしている間に、地上では何百年も経っていたのでした。" />
+                        </Paragraph>
+                    </RichTextBlock>
+
+                </StackPanel>
+                
+            </ScrollViewer>
+            
+        </controls:BladeItem>
+        
+    </Grid>
+    
+</UserControl>

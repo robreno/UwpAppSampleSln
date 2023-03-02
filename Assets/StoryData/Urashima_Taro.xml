@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Story nameEn="Urashima Taro" nameJp="浦島太郎 (うらしまたろう)">
+  <Name en="Urashima Taro" ja="浦島太郎" rt="(うらしまたろう)">浦島太郎</Name>
+  <Content>
+    <Paragraph id="1">
+      <Sentence id="1">
+        <Word en="u⎾ra⏋shimataroo" type="Per{n}" role="PN" meaning="a person's name">
+          <Run type="ruby"  text="浦島太郎" rt="うらしまたろう" />
+        </Word>
+      </Sentence>
+    </Paragraph>
+    <Paragraph id="2">
+      <Sentence id="1">
+        <Phrase>
+          <Word en="mu⎾kashi-mu⎾kashi" type="Com{n}" meaning="once upon a time">
+            <Run type="ruby" text="むかしむかし" rt="昔々" />
+          </Word>
+          <Punctuation type="comma" pausemark="true">
+            <Run type="regular" text="、" />
+          </Punctuation>
+        </Phrase>
+        <Phrase meaning="seaside village; village by the sea">
+          <PitchTone>a⏋ru umi be no mu⎾ra ni</PitchTone>
+          <Word en="a⏋ru" type="Vrb{i}.{attrib.}" dictForm="ある (或る)" meaning="a certain, some">
+            <Run type="regular" text="ある" />
+          </Word>
+          <Pause />
+          <Word en="u⏋mi" type="Com{n}" dictForm="うみ(海)" meaning="sea; ocean">
+            <Run type="ruby" text="海" rt="うみ" />
+          </Word>
+          <Suffix en="-be" type="Suf{be}" dictForm="べ(辺)" meaing="around; nearby; neigborhood">
+            <Run type="ruby" text="辺" rt="べ" />
+          </Suffix>
+          <Particle en="no" type="Prt{no}" role="{m.f.n.}" meaning="'s; of; in; at; for; by; from">
+            <Run type="regular" text="の" />
+          </Particle>
+          <Word en="mu⎾ra" type="Com{n}" meaning="village" note="can be used as suffix">
+            <Run type="ruby"  text="むら" rt="村" />
+          </Word>
+          <Particle en="ni" type="Prt{ni}" role="{i.l.e.}" meaning="location something exists">
+            <Run type="regular" text="に" />
+          </Particle>
+          <Punctuation type="comma">
+            <Run type="regular" text="、" />
+          </Punctuation>
+        </Phrase>
+        <Phrase>
+          <PitchTone>u⎾rashimataroo という りょうし が すんでいました。</PitchTone>
+          <Word en="u⎾rashimataroo" type="Pro{n}" role="PN" meaning="">
+            <Run type="ruby" text="浦島太郎" rt="うらしまたろう" />
+          </Word>
+          <Word>
+            <Run type="regular" text="という" />
+          </Word>
+          <Word en="ryooshi" type="Com{n}" role="CN" meaning="fisherman">
+            <Run type="ruby" text="漁師" rt="りょうし" />
+          </Word>
+          <Particle en="ga" id="Prt{ga}" role="{s.m.}">
+            <Run type="regular" text="が" />
+          </Particle>
+          <Pause />
+          <Word en="sunde" type="Vrb{te}" dictForm="すむ">
+            <Run type="ruby" text="住" rt="す" />
+            <Run type="regular" text="んで"/>
+            <Run type="regular" text="いました" />
+          </Word>
+          <Punctuation type="periodSpace">
+            <Run type="regular" text="。"/>
+          </Punctuation>
+        </Phrase>
+      </Sentence>
+      <Sentence>
+        <Phrase>
+          <PitchTone>u⎾rashima⏋taroo は こ⎾ころのやさしい⏋ わかもの で</PitchTone>
+          <Word en="u⎾rashimataroo" type="Pro">
+            <Run type="ruby" text="浦島太郎" rt="うらしまたろう" />
+          </Word>
+          <Particle en="wa" type="Prt{wa}" role="{t.m.}" meaning="talking about ~; as for ~; the">
+            <Run type="regular" text="は" />
+          </Particle>
+          <Pause />
+          <word en="ko⎾ko⏋ro" type="Com{n}" meaning="heart; mind; spirit">
+            <Run type="ruby" text="心" rt="こころ" />
+          </word>
+          <Particle en="no" type="Prt{no}" role="{m.f.n.}" note="also known as a Noun Linker as in N + no + N">
+            <Run type="regular" text="の" />
+          </Particle>
+          <Word en="ya⎾sashii" type="Adj{i}" dictForm="やさしい(優しい)" meaning="gentle; tender; kind">
+            <Run type="ruby" text="優" rt="やさ" />
+            <Run type="regular" text="しい" />
+          </Word>
+          <Word en="wakamono" type="Com{n}"  meaning="young person; youth">
+            <Run type="ruby" text="若者" rt="わかもの" />
+          </Word>
+          <Particle en="de" type="Prt{de}" role="{i.l.a.}" meaning="because of; weak causal relationship" >
+            <Run type="regular" text="で" />
+          </Particle>
+          <Punctuation>
+            <Run type="regular" text="、" />
+          </Punctuation>
+        </Phrase>
+        <Phrase>
+          <Word en="mainichi" type="Com{n}" meaning="every day">
+            <Run type="ruby" text="毎日" rt="まいにち" />
+          </Word>
+          <Pause />
+          <Word en="umi" type="Com{n}" meaning="sea, ocean">
+            <Run type="ruby" text="海" rt="うみ" />
+          </Word>
+          <Particle en="e" type="Prt{e}" role="{i.d.m.}" meaning="direction toward something" >
+            <Run type="regular" text="へ" />
+          </Particle>
+          <Word en="dekakete" type="Vrb{te}" dictForm="dekakeru, でかける (出掛ける)" meaning="go out; leave the house; depart">
+            <Run type="ruby" text="出" rt="で" />
+            <Run type="regular" text="かけて" />
+          </Word>
+        </Phrase>
+        <Phrase>
+          <Word en="sakana" type="Com{n}" dictForm="さかな(海)" meaning="fish">
+            <Run type="ruby" text="海" rt="さかな" />
+          </Word>
+          <Particle en="o" type="Prt{o}" role="{d.o.m.}">
+            <Run type="regular" text="を" />
+          </Particle>
+          <Word en="tsutte" type="Vrb{te}" dictForm="つる (釣る)" meaning="fish; angle; catch">
+              <Run type="regular" text="つって" />
+          </Word>
+        </Phrase>
+        <Pause />
+        <Phrase>
+          <Word en="toshioita" type="Adj{n}" dictForm="とし(年)" meaning="aged, elderly">
+            <Run type="ruby" text="年老" rt="としお" />
+            <Run type="regular" text="いた" />
+          </Word>
+          <Word en="father" type="Com{n}" dictForm="おとうさん(お父さん)" meaning="one's father">
+            <Run type="regular" text="お" />
+            <Run type="ruby" text="父" rt="とう" />
+            <Run type="regular" text="さん" />
+          </Word>
+          <Particle en="to" type="Prt{to}" role="{conj}">
+            <Run type="regular" text="と" />
+          </Particle>
+          <Word en="mother" type="Com{n}" dictForm="おかあさん(お母さん)" meaning="one's mother">
+            <Run type="regular" text="お" />
+            <Run type="ruby" text="母" rt="かあ" />
+            <Run type="regular" text="さん" />
+          </Word>
+          <Particle en="o" type="Prt{o}" role="{d.o.m.}">
+            <Run type="regular" text="を" />
+          </Particle>
+          <Pause />
+          <Word en="yashinatte" type="Vrb{te}" dictForm="やしなう" meaning="to support someone for living">
+            <Run type="ruby" text="養" rt="やしな" />
+            <Run type="regular" text="って" />
+          </Word>
+          <Word en="imashita" type="Vrb{i}" dictForm="いる(居る)" meaning="be, there, is [are], exists">
+            <Run type="regular" text="いました" />
+          </Word>
+          <Punctuation type="period">
+            <Run type="regular" text="。"/>
+          </Punctuation>
+        </Phrase>
+      </Sentence>
+    </Paragraph>
+  </Content>
+</Story>

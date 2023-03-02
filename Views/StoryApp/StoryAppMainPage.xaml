@@ -1,0 +1,99 @@
+﻿<Page
+    x:Class="UwpSample.Views.StoryAppMainPage"
+    x:Name="MainStoryAppPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
+    xmlns:core="using:Microsoft.Xaml.Interactions.Core"
+    xmlns:viewModels="using:UwpSample.ViewModels"
+    xmlns:converters="using:Microsoft.Toolkit.Uwp.UI.Converters"
+    xmlns:localConverters="using:UwpSample.Converters.ValueConverters"
+    xmlns:local="using:UwpSample.Views"
+    xmlns:ap="using:UwpSample.AttachedProperties" 
+    mc:Ignorable="d"
+    d:DataContext="{d:DesignInstance Type=viewModels:UrashimaTaroViewModel}"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    RequestedTheme="Dark">
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Styles/Custom/StoryStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <converters:TaskResultConverter x:Key="TaskResultConverter"/>
+            <localConverters:RequestStoryConverter x:Key="RequestStoryConverter"/>
+            <localConverters:MediaElementArgsConverter x:Key="MediaElementArgsConverter"/>
+            <x:String x:Key="storyId">1</x:String>
+            <x:String x:Key="storyLanguage">ja</x:String>
+            <x:String x:Key="storyName">UrashimaTaro</x:String>
+            <x:String x:Key="storyTitle">浦島太郎</x:String>
+            <x:String x:Key="storyRubyTitle">浦島太郎 (うらしまたろう)</x:String>
+            <x:String x:Key="localAudioUri">ms-appx:///Assets/StoryData/Audio/Urashima.mp3</x:String>
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <Page.DataContext>
+        <viewModels:UrashimaTaroViewModel x:Name="viewModel"/>
+    </Page.DataContext>
+
+    <interactivity:Interaction.Behaviors>
+        <core:EventTriggerBehavior EventName="Loaded">
+            <core:InvokeCommandAction Command="{Binding LoadStoryCommand}"
+                                      InputConverter="{StaticResource RequestStoryConverter}"
+                                      InputConverterLanguage="ja|en"
+                                      InputConverterParameter="{StaticResource storyId}"/>
+        </core:EventTriggerBehavior>
+    </interactivity:Interaction.Behaviors>
+
+    <Grid x:Name="MainGrid">
+
+        <TextBlock x:Name="currentParagraphName" Text="{x:Bind viewModel.CurrentParagraphName}" />
+
+        <MediaElement x:Name="mediaElement" 
+                      AreTransportControlsEnabled="True"
+                      AutoPlay="False" 
+                      Visibility="Collapsed"
+                      Source="ms-appx:///Assets/StoryData/Audio/JaUrashima.mp3">
+            <interactivity:Interaction.Behaviors>
+                <core:EventTriggerBehavior EventName="MarkerReached">
+                    <core:InvokeCommandAction Command="{Binding MarkerReachedCommand}" 
+                                              InputConverter="{StaticResource MediaElementArgsConverter}"
+                                              InputConverterParameter="{Binding ElementName=mediaElement}"
+                                              InputConverterLanguage="ja-JP" />
+                </core:EventTriggerBehavior>
+                <!--<core:EventTriggerBehavior EventName="MediaEnded">
+                    <core:InvokeCommandAction Command="{Binding MediaEndedRequest}" 
+                                    InputConverter="{StaticResource MediaElementArgsConverter}" 
+                                    InputConverterLanguage="en-US" 
+                                    InputConverterParameter="{Binding ElementName=mediaElement, Path=Name}" />
+                </core:EventTriggerBehavior>
+                <core:EventTriggerBehavior EventName="CurrentStateChanged">
+                    <core:InvokeCommandAction Command="{Binding MediaStateChangedRequest}" 
+                                    InputConverter="{StaticResource MediaElementArgsConverter}" 
+                                    InputConverterLanguage="en-US" 
+                                    InputConverterParameter="{Binding ElementName=mediaElement, Path=Name}" />
+                </core:EventTriggerBehavior>-->
+            </interactivity:Interaction.Behaviors>
+        </MediaElement>
+
+        <ScrollViewer x:Name="JaScrollViewer"
+                                  VerticalScrollBarVisibility="Visible"
+                                  IsTapEnabled="True"
+                                  IsDoubleTapEnabled="True">
+            <StackPanel x:Name="MainStackPanel" 
+                    MaxWidth="600"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Stretch"
+                    Margin="50, 50,50,50"
+                    ScrollViewer.VerticalScrollBarVisibility="Visible"
+                    ScrollViewer.IsVerticalRailEnabled="True">
+
+            </StackPanel>
+
+        </ScrollViewer>
+    </Grid>
+    
+</Page>

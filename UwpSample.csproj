@@ -1,0 +1,569 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{100ED52F-3864-4342-BAC3-C6B6F17BFE0D}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UwpSample</RootNamespace>
+    <AssemblyName>UwpSample</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.19041.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WindowsXamlEnableOverview>true</WindowsXamlEnableOverview>
+    <AppxPackageSigningEnabled>false</AppxPackageSigningEnabled>
+    <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM64'">
+    <OutputPath>bin\ARM64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AttachedProperties\RichTextBlockProperties.cs" />
+    <Compile Include="Behaviors\Behavior.cs" />
+    <Compile Include="Behaviors\MediaStatusChangedAction.cs" />
+    <Compile Include="Controls\MediaPlayback\PlaylistView.xaml.cs">
+      <DependentUpon>PlaylistView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\StoryApp\EnUrashimaTaroBladeItem.xaml.cs">
+      <DependentUpon>EnUrashimaTaroBladeItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\StoryApp\JaUrashimaTaroBladeItem.xaml.cs">
+      <DependentUpon>JaUrashimaTaroBladeItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\StoryApp\JaUrashimaTaroScrollViewer.xaml.cs">
+      <DependentUpon>JaUrashimaTaroScrollViewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\StoryApp\ParagraphTuple.xaml.cs">
+      <DependentUpon>ParagraphTuple.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Converters\ValueConverters\DoubleTappedArgs.cs" />
+    <Compile Include="Converters\ValueConverters\HyperlinkElementTapped.cs" />
+    <Compile Include="Converters\ValueConverters\Interfaces\IDoubleTappedArgs.cs" />
+    <Compile Include="Converters\ValueConverters\Interfaces\IMediaElementStateChanged.cs" />
+    <Compile Include="Converters\ValueConverters\Interfaces\IRequestQuery.cs" />
+    <Compile Include="Converters\ValueConverters\MediaElementStateChanged.cs" />
+    <Compile Include="Converters\ValueConverters\MediaElementStateChangedArgsConverter.cs" />
+    <Compile Include="Converters\ValueConverters\PlaybackStateToButtonIconConverter.cs" />
+    <Compile Include="Converters\ValueConverters\BitsConverter.cs" />
+    <Compile Include="Converters\ValueConverters\BooleanAndNegationConverter.cs" />
+    <Compile Include="Converters\ValueConverters\BooleanNegationConverter.cs" />
+    <Compile Include="Converters\ValueConverters\BooleanToInternetAccessLabelConverter.cs" />
+    <Compile Include="Converters\ValueConverters\BooleanToVisibilityConverter.cs" />
+    <Compile Include="Converters\ValueConverters\BooleanVisibilityConverter.cs" />
+    <Compile Include="Converters\ValueConverters\BytesConverter.cs" />
+    <Compile Include="Converters\ValueConverters\DoubleTappedArgsConverter.cs" />
+    <Compile Include="Converters\ValueConverters\DoubleTappedRequest.cs" />
+    <Compile Include="Converters\ValueConverters\DurationDisplayConverter.cs" />
+    <Compile Include="Converters\ValueConverters\HyperlinkElementArgsConverter.cs" />
+    <Compile Include="Converters\ValueConverters\Interfaces\IHyperlinkElementTapped.cs" />
+    <Compile Include="Converters\ValueConverters\Interfaces\IMarkerReached.cs" />
+    <Compile Include="Converters\ValueConverters\Interfaces\IMediaElementStatusChanged.cs" />
+    <Compile Include="Converters\ValueConverters\Interfaces\IMediaElementEnd.cs" />
+    <Compile Include="Converters\ValueConverters\Interfaces\IRichTextBlockElementDoubleTapped.cs" />
+    <Compile Include="Converters\ValueConverters\Interfaces\IScrollViewerLoaded.cs" />
+    <Compile Include="Converters\ValueConverters\Interfaces\ITappedArgs.cs" />
+    <Compile Include="Converters\ValueConverters\InverseBooleanConverter.cs" />
+    <Compile Include="Converters\ValueConverters\MarkerReached.cs" />
+    <Compile Include="Converters\ValueConverters\MediaElementStatusChanged.cs" />
+    <Compile Include="Converters\ValueConverters\MediaElementArgsConverter.cs" />
+    <Compile Include="Converters\ValueConverters\MediaElementEnd.cs" />
+    <Compile Include="Converters\ValueConverters\OpacityConverter .cs" />
+    <Compile Include="Converters\ValueConverters\PositionDisplayConverter.cs" />
+    <Compile Include="Converters\ValueConverters\RequestStoryConverter.cs" />
+    <Compile Include="Converters\ValueConverters\RichTextBlockElementArgsConverter.cs" />
+    <Compile Include="Converters\ValueConverters\RoutedEventArgsConverter.cs" />
+    <Compile Include="Converters\ValueConverters\ScrollViewerArgsConverter.cs" />
+    <Compile Include="Converters\ValueConverters\ScrollViewerLoaded.cs" />
+    <Compile Include="Converters\ValueConverters\SignalConverter.cs" />
+    <Compile Include="Converters\ValueConverters\TappedArgsConverter.cs" />
+    <Compile Include="DataModels\JapanesePhonetics\JpnPhonemeDto.cs" />
+    <Compile Include="DataModels\MediaItem.cs" />
+    <Compile Include="DataModels\MediaList.cs" />
+    <Compile Include="DataModels\MusicItem.cs" />
+    <Compile Include="DataModels\VideoItem.cs" />
+    <Compile Include="Dtos\Audio\CurrentAudioInfo.AudioSettingDto.cs" />
+    <Compile Include="Dtos\Audio\CurrentAudioInfoDto.cs" />
+    <Compile Include="Dtos\Audio\MarkerReachedDto.cs" />
+    <Compile Include="Models\Audio\AudioSetting.cs" />
+    <Compile Include="Models\Audio\CurrentAudioInfo.cs" />
+    <Compile Include="Models\StoryApp\Interfaces\INames.cs" />
+    <Compile Include="Models\StoryApp\JapaneseParagraph.cs" />
+    <Compile Include="Models\StoryApp\Interfaces\IJapaneseParagraph.cs" />
+    <Compile Include="Models\StoryApp\Interfaces\IParagraph.cs" />
+    <Compile Include="Dtos\StoryApp\JapaneseTermDto.cs" />
+    <Compile Include="Dtos\StoryApp\JapaneseTextDto.cs" />
+    <Compile Include="Dtos\StoryApp\ContentDto.cs" />
+    <Compile Include="Dtos\StoryApp\EnglishTermDto.cs" />
+    <Compile Include="Dtos\StoryApp\EnglishTextDto.cs" />
+    <Compile Include="Dtos\StoryApp\Interfaces\IRunDto.cs" />
+    <Compile Include="Dtos\StoryApp\Interfaces\ITermDto.cs" />
+    <Compile Include="Dtos\StoryApp\Interfaces\ITextDto.cs" />
+    <Compile Include="Dtos\StoryApp\Interfaces\IVocabularyDto.cs" />
+    <Compile Include="Dtos\StoryApp\LanguageDto.cs" />
+    <Compile Include="Dtos\StoryApp\ParagraphDto.cs" />
+    <Compile Include="Dtos\StoryApp\ParagraphTupleDto.cs" />
+    <Compile Include="Dtos\StoryApp\PauseRunDto.cs" />
+    <Compile Include="Dtos\StoryApp\RegularRunDto.cs" />
+    <Compile Include="Dtos\StoryApp\RubyRunDto.cs" />
+    <Compile Include="Dtos\StoryApp\StoryDto.cs" />
+    <Compile Include="Dtos\StoryApp\VocabularyDto.cs" />
+    <Compile Include="Helpers\MarkdownHelper.cs" />
+    <Compile Include="Helpers\TitleBarHelper.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\QueryEngine\Document.cs" />
+    <Compile Include="Models\QueryEngine\PostingList.cs" />
+    <Compile Include="Models\QueryEngine\Term.cs" />
+    <Compile Include="Models\QueryEngine\TokenOccurrence.cs" />
+    <Compile Include="Models\StoryApp\Content.cs" />
+    <Compile Include="Models\StoryApp\EnglishTerm.cs" />
+    <Compile Include="Models\StoryApp\EnglishText.cs" />
+    <Compile Include="Models\StoryApp\Interfaces\ITerm.cs" />
+    <Compile Include="Models\StoryApp\Interfaces\IText.cs" />
+    <Compile Include="Models\StoryApp\Interfaces\IRun.cs" />
+    <Compile Include="Models\StoryApp\Interfaces\IVocabulary.cs" />
+    <Compile Include="Models\StoryApp\Language.cs" />
+    <Compile Include="Models\StoryApp\JapaneseRubyRun.cs" />
+    <Compile Include="Models\StoryApp\JapaneseTerm.cs" />
+    <Compile Include="Models\StoryApp\EnglishParagraph.cs" />
+    <Compile Include="Models\StoryApp\Names.cs" />
+    <Compile Include="Models\StoryApp\ParagraphTuple.cs" />
+    <Compile Include="Models\StoryApp\JapanesePauseRun.cs" />
+    <Compile Include="Models\StoryApp\RegularRun.cs" />
+    <Compile Include="Models\StoryApp\Story.cs" />
+    <Compile Include="Models\StoryApp\Vocabulary.cs" />
+    <Compile Include="Models\Theme.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SampleConfiguration.cs" />
+    <Compile Include="Services\BackgroundMediaSettingsService.cs" />
+    <Compile Include="Services\Dialogs\ModalView.cs" />
+    <Compile Include="Services\FileService.cs" />
+    <Compile Include="Services\IFileService.cs" />
+    <Compile Include="Services\ISettingsService.cs" />
+    <Compile Include="Services\Logging\DebugLoggingService.cs" />
+    <Compile Include="Services\Logging\ILoggingService.cs" />
+    <Compile Include="Services\MediaPlayback\PlaybackService.cs" />
+    <Compile Include="Services\Messenger\Alert\AlertMessageService.cs" />
+    <Compile Include="Services\Messenger\Alert\DialogCommand.cs" />
+    <Compile Include="Services\Messenger\Alert\IAlertMessageService.cs" />
+    <Compile Include="Services\Messenger\Messages\ThemeChangedMessage.cs" />
+    <Compile Include="Services\Messenger\Messages\ThemeRequestMessage.cs" />
+    <Compile Include="Services\QueryEngine\DocumentService.cs" />
+    <Compile Include="Services\QueryEngine\Interfaces\IDocumentService.cs" />
+    <Compile Include="Services\QueryEngine\Interfaces\IPostingListService.cs" />
+    <Compile Include="Services\QueryEngine\Interfaces\ITermService.cs" />
+    <Compile Include="Services\QueryEngine\PostingListService.cs" />
+    <Compile Include="Services\Resources\IResourceLoaderService.cs" />
+    <Compile Include="Services\Resources\ResourceLoaderAdapter.cs" />
+    <Compile Include="Services\SettingsService.cs" />
+    <Compile Include="Services\StoryApp\Interfaces\IStoryService.cs" />
+    <Compile Include="Services\StoryApp\StoryService.cs" />
+    <Compile Include="Shell.xaml.cs">
+      <DependentUpon>Shell.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\Base\CommandExecutionContext.cs" />
+    <Compile Include="ViewModels\Base\GenericDelegateCommand.cs" />
+    <Compile Include="ViewModels\Command\CommandViewModel.cs" />
+    <Compile Include="ViewModels\Conversion\DoubleTappedArgs.cs" />
+    <Compile Include="ViewModels\Conversion\DoubleTappedArgsConverter.cs" />
+    <Compile Include="ViewModels\Conversion\DoubleTappedRequest.cs" />
+    <Compile Include="ViewModels\Conversion\IDoubleTappedArgs.cs" />
+    <Compile Include="ViewModels\Conversion\IAudioMediaEventArgs.cs" />
+    <Compile Include="ViewModels\Conversion\IRequestQuery.cs" />
+    <Compile Include="ViewModels\Conversion\IRequestStory.cs" />
+    <Compile Include="ViewModels\Conversion\IRichTextBlockElementDoubleTapped.cs" />
+    <Compile Include="ViewModels\Conversion\ITappedArgs.cs" />
+    <Compile Include="ViewModels\Conversion\AudioMediaEventArgs.cs" />
+    <Compile Include="ViewModels\Conversion\RequestQuery.cs" />
+    <Compile Include="ViewModels\Conversion\RequestStory.cs" />
+    <Compile Include="ViewModels\Conversion\RichTextBlockElementDoubleTapped.cs" />
+    <Compile Include="ViewModels\Conversion\TappedArgs.cs" />
+    <Compile Include="ViewModels\MediaPlayback\MediaItemViewModel.cs" />
+    <Compile Include="ViewModels\MediaPlayback\MediaListViewModel.cs" />
+    <Compile Include="ViewModels\MediaPlayback\PlaybackSessionViewModel.cs" />
+    <Compile Include="ViewModels\MediaPlayback\PlayerViewModel.cs" />
+    <Compile Include="ViewModels\MediaPlayback\SMCViewModel.cs" />
+    <Compile Include="ViewModels\QueryEngine\DocumentsPageViewModel.cs" />
+    <Compile Include="ViewModels\QueryEngine\PostingListsPageViewModel.cs" />
+    <Compile Include="ViewModels\StoryApp\RestorableStateAttribute.cs" />
+    <Compile Include="ViewModels\StoryApp\StoryPageViewModel.cs" />
+    <Compile Include="ViewModels\ViewModelBase.cs" />
+    <Compile Include="ViewModels\ShellViewModel.cs" />
+    <Compile Include="Views\Command\CommandView.xaml.cs">
+      <DependentUpon>CommandView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\JapanesePhonetics\JapanesePhoneticsPage.xaml.cs">
+      <DependentUpon>JapanesePhoneticsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MediaMarker\MediaMarker.xaml.cs">
+      <DependentUpon>MediaMarker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MediaPlayback\MediaPlayerPage.xaml.cs">
+      <DependentUpon>MediaPlayerPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MediaPlayback\SystemMediaPlayerPage.xaml.cs">
+      <DependentUpon>SystemMediaPlayerPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MediaPlayback\SystemMediaPlayerShared.cs" />
+    <Compile Include="Views\QueryEngine\PostingListsPage.xaml.cs">
+      <DependentUpon>PostingListsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\QueryEngine\TermsPage.xaml.cs">
+      <DependentUpon>TermsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\QueryEngine\DocumentsPage.xaml.cs">
+      <DependentUpon>DocumentsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Services\QueryEngine\TermService.cs" />
+    <Compile Include="ViewModels\QueryEngine\TermsPageViewModel.cs" />
+    <Compile Include="Views\StoryApp\StoryAppMainPage.xaml.cs">
+      <DependentUpon>StoryAppMainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StoryApp\UrashimaMainPage.xaml.cs">
+      <DependentUpon>UrashimaMainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StoryApp\UrashimaTaroPageEx.xaml.cs">
+      <DependentUpon>UrashimaTaroPageEx.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StoryApp\UrashimaTaroPageExShared.cs" />
+    <Compile Include="Views\StoryApp\UrashimaTaroPageShared.cs" />
+    <Compile Include="Views\StoryApp\UrashimaTaroPage.xaml.cs">
+      <DependentUpon>UrashimaTaroPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\StoryApp\UrashimaTaroViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Audio\Urantia\UB.000.0.mp3" />
+    <Content Include="Assets\Audio\Urantia\UB.000.mp3" />
+    <Content Include="Assets\Audio\Urantia\UB.001.0.mp3" />
+    <Content Include="Assets\Audio\Urantia\UB.001.mp3" />
+    <Content Include="Assets\Audio\Urantia\UB.002.mp3" />
+    <Content Include="Assets\Audio\Urantia\UB.032.0.mp3" />
+    <Content Include="Assets\Audio\Urantia\UB.057.0.mp3" />
+    <Content Include="Assets\Audio\Urantia\UB.120.0.mp3" />
+    <Content Include="Assets\StoryData\Audio\JaUrashima.mp3" />
+    <Content Include="Assets\StoryData\Grammer.xml" />
+    <Content Include="Assets\StoryData\Stories.xml" />
+    <Content Include="Assets\StoryData\Story1.xml" />
+    <Content Include="Assets\StoryData\Urashima.audio.xml" />
+    <Content Include="Assets\StoryData\Urashima_Taro.xml" />
+    <Content Include="Assets\StoryData\VocabularyDictionary.xml" />
+    <Content Include="Assets\Themes\Caravan_Conductor.png" />
+    <Content Include="Assets\Themes\Chinese_Merchant.jpg" />
+    <Content Include="Assets\Themes\Daniel-Gerhartz-Forgiven-600x800.jpg" />
+    <Content Include="Assets\Themes\Healing_of_the_Blind_Bartimaeus.png" />
+    <Content Include="Assets\Themes\Jesus_and_Ganid_at_the_Great_Lighthouse.png" />
+    <Content Include="Assets\Themes\Jesus_Heals_Paralytic.png" />
+    <Content Include="Assets\Themes\Jesus_Merchant.png" />
+    <Content Include="Assets\Themes\Jesus_Rebecca.png" />
+    <Content Include="Assets\Themes\One_Day_Alone_With_God.png" />
+    <Content Include="Assets\Themes\Pool_Of_Siloam.png" />
+    <Content Include="Assets\Themes\Slawa_Radziszewska_The_Two_Courtesans_525.jpg" />
+    <Content Include="Assets\Themes\Son-of-Man-Son-of-God.png" />
+    <Content Include="Assets\Themes\Stephen-Sawyer-Slawa-Radziszewska-The-Turning-Point-525.jpg" />
+    <Content Include="Assets\Themes\Studying_at_the_Alexandrian_Library.png" />
+    <Content Include="Assets\Themes\Walter-Rane-He-Is-Not-Here-600x374.jpg" />
+    <Content Include="Assets\XmlData\DocumentList.xml" />
+    <Content Include="Assets\XmlData\PostingLists.xml" />
+    <Content Include="Assets\XmlData\StemmedLexicon.xml" />
+    <Content Include="Assets\_DarkGray2.png" />
+    <Content Include="Assets\_DarkPurpleTile.png" />
+    <Content Include="Assets\_LightGray2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\_LightPurpleTile.png" />
+    <Content Include="Assets\_LightPurpleTile2.png" />
+    <Content Include="Assets\_MediumBlueTile.png" />
+    <Content Include="Assets\_MediumGray2.png" />
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="Assets\UbmlData\000.jpn.xml" />
+    <Content Include="TextFile1.txt" />
+    <Content Include="Tookkit.Release.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Controls\MediaPlayback\PlaylistView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\StoryApp\EnUrashimaTaroBladeItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\StoryApp\JaUrashimaTaroBladeItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\StoryApp\JaUrashimaTaroScrollViewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\StoryApp\ParagraphTuple.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Shell.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Custom\StoryStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Command\CommandView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\JapanesePhonetics\JapanesePhoneticsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MediaMarker\MediaMarker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MediaPlayback\MediaPlayerPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MediaPlayback\SystemMediaPlayerPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\QueryEngine\PostingListsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\QueryEngine\TermsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\QueryEngine\DocumentsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\StoryApp\StoryAppMainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\StoryApp\UrashimaMainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\StoryApp\UrashimaTaroPageEx.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\StoryApp\UrashimaTaroPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection">
+      <Version>3.1.9</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+      <Version>6.2.12</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit">
+      <Version>7.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Mvvm">
+      <Version>7.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Uwp">
+      <Version>7.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Uwp.UI">
+      <Version>7.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Uwp.UI.Animations">
+      <Version>7.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Uwp.UI.Behaviors">
+      <Version>7.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Uwp.UI.Controls">
+      <Version>7.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Uwp.UI.Controls.Markdown">
+      <Version>7.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.UI.Xaml">
+      <Version>2.5.0</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>13.0.1</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\JsonData\playlist.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="WindowsDesktop, Version=10.0.19041.0">
+      <Name>Windows Desktop Extensions for the UWP</Name>
+    </SDKReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controls\CustomMediaControls\" />
+    <Folder Include="Objects\" />
+    <Folder Include="Shared\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="Strings\en-US\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="Strings\ja-JP\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="Strings\en-US\ErrorMessages.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="Strings\ja-JP\Resources.altform-msft-phonetic.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="Strings\ja-JP\ErrorMessages.resw" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
