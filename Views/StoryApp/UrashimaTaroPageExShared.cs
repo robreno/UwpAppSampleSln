@@ -1,18 +1,7 @@
 ﻿using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Input;
 using System.Linq;
 using Windows.UI.Xaml;
-using Microsoft.Toolkit.Mvvm.DependencyInjection;
-using Newtonsoft.Json.Linq;
-using Windows.UI.Xaml.Documents;
 using System.Collections.Generic;
-
-using UwpSample.Services;
-using UwpSample.Models;
-using UwpSample.Models.Interfaces;
-using UwpSample.ViewModels;
-using UwpSample.Dtos;
-using UwpSample.AttachedProperties;
 using Windows.Media;
 using Windows.UI.Core;
 using System;
